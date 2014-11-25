@@ -17,7 +17,7 @@ This repository is divided into Themes. More specifically Programming languages.
   = C and SH: very interested in Linux OS. Specially Debian based linux (caixa magica, ubuntu).
   
       - C: understanding of it´s strucuture and syntaxe.
-      - SH: also very usefull when administrating Linux machines. Being able to add pipes (with grep, sed,...). Taking care of permission (chmod)...
+      - SH: also very usefull when administrating Linux machines. Being able to add pipes (to use grep, sed,...). Taking care of permission (chmod)...
   
   = RUBY: there is the beginning of the study of it. Basic Knowledge of it´s structure. Interested in expanding to Ruby on Rails.
   
