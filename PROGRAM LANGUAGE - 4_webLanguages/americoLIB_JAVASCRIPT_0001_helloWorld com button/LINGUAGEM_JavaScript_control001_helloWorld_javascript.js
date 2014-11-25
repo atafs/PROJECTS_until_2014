@@ -1,0 +1,1 @@
+document.write("<strong>hello from some external Javascript</strong");
