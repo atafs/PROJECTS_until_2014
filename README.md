@@ -3,6 +3,7 @@ PROJECTS_until_2014
 Good Evening:
 
 This repository is divided into Themes. More specifically Programming languages.
+
   = JAVA: is divide by a super and todosProjectos.     
       - In the super there are all the mini projects, exercises, projects that i have done. With all the projects imported as           JAR files. Just leaving de Main to be executed. 
       - In the todosProjectos there is all the source code without being packaged in JAR files and Libraries.
@@ -23,7 +24,8 @@ This repository is divided into Themes. More specifically Programming languages.
       - LaTeX: nice text editor. Great presentation. Some code needs to be writen will writing the ideias and concepts.
       - Git and Github: great tool. To work in teams that are not necessarily in the same place.
       
-  = DATA_BASE: also projects and mini projects related with the creation of data bases. Using PowerDesign, Interprise            Arquitectura(EA), Sybase Central, Office Access. 
+  = DATA_BASE: also projects and mini projects related with the creation of data bases. Using PowerDesign, Enterprise Arquitectura(EA), Sybase Central, Office Access. 
+  
       - Diagrams: knowledge about several types of diagrames (classes, use cases, sequencial, states,...)
       - SQL: knowledge about SELECT, WHERE, FROM, ORDER BY, SubQueries, Triggers. Still in progress further expension of this         subject.
       
