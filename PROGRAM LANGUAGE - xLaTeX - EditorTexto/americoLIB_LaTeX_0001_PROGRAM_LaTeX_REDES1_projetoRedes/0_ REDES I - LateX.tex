@@ -1,0 +1,445 @@
+\documentclass[13pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[hmargin=2cm,vmargin=3.5cm,bmargin=2cm]{geometry}
+\usepackage{graphicx}
+
+\pagestyle{fancy} %estilo fancy
+\lhead{\rightmark} % esquerda do cabeçalho
+\chead{} %centro do cabeçalho
+\rhead{\leftmark} % direita do cabeçalho
+\lfoot{} %esquerda do rodapé 
+\cfoot{\thepage} %centro do rodapé
+\rfoot{} %direita do rodapé
+
+%dados da capa
+\title{REDES DIGITAIS I - parte I do projecto}
+\author{Américo Tomás (54149), Ianick Insaly(60585), Eduardo Gonçalves(60596) }
+\date{Março 2014}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents %Índice de conteúdos
+
+\chapter{Introdução}
+
+Sem deteção e correção de erros teríamos sérios problemas de integração e utilização das redes. A quem nunca aconteceu ficar meia dúzia de segundos à espera que uma página na web abra e Nada. Sem abordarmos estes assuntos seriamente, isso aconteceria a todo o instante. 
+
+\paragraph{}
+Neste projeto vamos abordar deteção e correção de erros. Sendo importante distinguir claramente a diferença entre ambos. Existem algoritmos que detetam, mas não corrigem. Outros detetam e corrigem, mas poucos erros e assim sucessivamente. Cada um tem vantagens e desvantagens. Sendo a sua utilização muito variante do tipo de utilização que está a ser dado à rede.
+
+Também vamos abordar ritmo binário, bem como valores médios de repetição de envio de PDU's (no nível 2: tramas).
+
+\paragraph{}
+Naturalmente o ritmo a que conseguimos aceder a informação, enviando e recebendo a mesma é vital. Saber os atuais limites para tirar o máximo proveito das redes já existentes. Ao mesmo tempo que é possível procurar e planear de forma a criar infra-estruturas, que juntamente com a investigação que está a decorrer a nível mundial, irá permitir dar aos atuais clientes, novas velocidades, maior estabilidades, sempre tendo em consideração o consumo energético.
+
+\paragraph{}
+Neste projeto iremos procurar perceber o que é uma rede, bem como lidar com alguns dos desafios inerentes ao seu funcionamento. Desde a criação de expressões gerais para abordarmos estes problemas, testando vários valores. Como posteriormente fazendo a implementação de da mesma.
+
+\paragraph{}
+Este parte do projeto foi feita no editor de texto LateX. Muito bom para escrita de linguagem matemática, de forma a provar os assuntos que vamos abordando. Existem anexos (A, B e C), feitos tanto em Excel, como cópias de ecrã para poder analisar os resultados das experiências feitas. 
+
+\paragraph{}
+Com este Trabalho pretende-se estudar algumas das funcionalidades que estão presentes nos níveis de ligações de dados no modelo de OSI do ISO, nomeadamente:
+O ritmo binário máximo que um cliente pode colocar na interface com o nível ligação de dados, O valor médio para o atraso sofrido por uma mensagem que é colocada na interface do nível ligação de dados e a probabilidade de ser entregue ao cliente destino uma mensagem com erros.
+Nesta parte do trabalho iremos apresentar resultados analíticos, recorrendo a um conjunto de expressões e aproximações teóricas.  
+
+%inserir figura
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=0.2]{redes_introducao.jpg}   
+\caption{Legenda}
+\end{figure}
+
+
+
+%perguntas 2
+\chapter{Detecção de erros}
+
+%secção 2.1
+\section{Criar o $CRC{_8my}$ do nosso grupo}
+
+Após utilizar o CRC-8my.java, obtivemos para o nosso grupo o seguinte número Binário:
+\paragraph{}
+
+\emph{•} Padrão binário gerado: 
+$111100011$
+\paragraph{}
+    
+\emph{•} Polinómio: 
+$1*x^8+1*x^7+1*x^6+1*x^5+0*x^4+0*x^3+0*x^2+1*x^1+1*x^0$
+	
+\paragraph{}
+\emph{•} Eliminando os elementos a zero:
+$(x)=x^8+x^7+x^6+x^5+x^1+1$
+    
+
+\paragraph{}    
+%secção 2.2  
+\section{Expressão da taxa de redundância}  
+A taxa de redundância do código para os seguintes algoritmos está apresentado em anexo (A), numa folha de Excel.  
+\subsection{cálculo do n:}
+	Para obtermos a Taxa de redundância, precisamos primeiro de calcular o r (bit de redundância) para cada um dois algoritmos.
+	
+\paragraph{}
+\emph{•} Bit de paridade: r=1;
+	 
+\paragraph{}
+\emph{•} Hamming:	r = $\log_2 m + 1$; 
+	 
+\paragraph{}
+\emph{•} CRC: r = depende (polinómio de maior grau)\paragraph{}
+\rightarrow Sendo:${ \textbf{\textit{n = m + r} }}$ 
+	
+
+
+\subsection{cálculo da taxa:}
+\begin{equation}
+TaxaDeRedundância =\frac{r}{m + r}
+\end{equation}
+\paragraph{}
+	
+
+	
+	
+%secção 2.3
+\section{Probabilidade de estar ok}
+Para obter a probalilidade de uma trama ser enviada sem erros para os 3 tipos de algoritmos, colocamos em anexo (B) a respectiva informação, numa folha de excel.
+
+\subsection{cálculo de probabilidade de estar ok}
+	\begin{equation}
+	P_{ok} = (1 - P_{eb})^{n}
+	\end{equation}
+	
+\paragraph{}
+\emph{•} tendo o $n$ sido calculado anteriormente, variando para cada um dos algoritmos consoante o valores de $r$ dos mesmos.
+	\paragraph{}
+
+	 
+
+%secção 2.4
+\section{Bit de paridade: expressão exata}
+
+\emph{•} Bit de paridade (d=2), (\textbf{expressão exata}):
+    
+- numerador: Os somatórios dos pares.	
+    	
+- denominador: Probabilidade condicionada 
+	
+\begin{equation}
+P_{nd|e}(n,Peb)=\frac{\sum_{(i=par)}^{n} C_{i}^n * P_{eb}^i * (1 - P_{eb})^{n-i}\]}{1-(1-P_{eb})^n}
+\end{equation}
+	
+\paragraph{}
+\emph{•} Na expressão exata, o raciocínio usado foi o de calcular todos os valores possíveis, que o algoritmo Par assume que estão certos, mas que podem não estar. Sendo o operador somatório utilizado para representar todos os valores possíveis até $'n'$.
+      
+\paragraph{} 
+%secção 2.5    
+\section{Bit de paridade: expressão aproximada}
+
+\emph{•}  Bit de paridade (d=2), (\textbf{expressão aproximada}):
+
+\paragraph{}
+$P_{nd|e}^{dh}(n,Peb)\approx \frac{1 - (P_{0} + P_{1})}{1-(1-P_{eb})^n}}$
+
+\paragraph{}
+\begin{equation}
+P_{nd|e}^{dh}(n,Peb)\approx \frac{1 - [(1 - P_{eb})^n] - [ C_{1}^n * P_{eb}^1 * (1 - P_{eb})^{n-1}]}{1-(1-P_{eb})^n}}
+\end{equation}
+
+\paragraph{}
+\emph{•} Na expressão aproximada, o raciocínio utilizado foi uma espécie de 'negação'. Ou seja, queremos todos os valores (daí termos o valor $'1'$), subtraindo aqueles que estão certos de certeza (que são os valores da $P_{0}$ e da $P_{1}$). Estamos a usar uma aproximação por Excesso (são praticamente sempre por excesso), pois consideramos todos os casos $'1'$, quando no algoritmo Par apenas nos interessaria os pares. Nesta situação, o operador somatório desapareceu, sendo simplesmente substituído pelo valor $'1'$
+
+\paragraph{}
+%secção 2.6
+\section{Código de hamming: expressão aproximada}
+
+\emph{•}  Código Hamming (d=3), (\textbf{expressão aproximada}):
+
+\paragraph{}
+$P_{nd|e}^{dh}(n,Peb)\approx \frac{1 - (P_{0} + P_{1} + P_{2})}{1-(1-P_{eb})^n}}$
+
+\paragraph{}
+\begin{equation}
+P_{nd|e}^{dh}(n,Peb)\approx \frac{1 - [(1 - P_{eb})^n] - [ C_{1}^n * P_{eb}^1 * (1 - P_{eb})^{n-1}] - [ C_{2}^n * P_{eb}^2 * (1 - P_{eb})^{n-2}]}{1-(1-P_{eb})^n}}
+\end{equation}
+
+\paragraph{}
+\emph{•} Na expressão aproximada mas para o Código Hamming, o raciocínio usado é semelhante ao do Bit paridade, com a exceção de o $d = 3$, sendo $d$ a distância de Hamming. Por esse motivo quero todos os valores ($'1'$), exceto o $P_{0}$, $P_{1}$ e $P_{2}$.
+
+\paragraph{}
+%secção 2.7
+\section{Código de hamming}
+
+\paragraph{}
+\emph{•} $G_{4_ITU}(x) = G_{19}(x) = x^4 + x + 1$;
+\paragraph{}
+\emph{•} $G_{8_CCITT}(x) = G_{263}(x) = x^8 + x^2 + x + 1$;
+\paragraph{}
+\emph{•} $G_{8_my}(x) = G_{483}(x) = x^8 + x^7 + x^6 + x^5 + x^1 + 1$;
+
+\begin{equation}
+$(para valores exatos): $
+P_{nd} = \frac{\sum_{(i)}^{n} W_{i} * P_{eb}^i * (1 - P_{eb})^{n-i}\]}{1-(1-P_{eb})^n} 
+\end{equation}
+
+\begin{equation}
+$(para valores aprox.): $
+P_{nd} \approx \frac{\sum_{(i)}^{10} W_{i} * P_{eb}^i * (1 - P_{eb})^{n-i}\]}{1-(1-P_{eb})^n} 
+\end{equation}
+
+\paragraph{}
+\emph{•} A diferença entre os valores exatos e aproximados está num pedido feito pelo enunciado, para restringirmos a pesquisa a 10 elementos; $W = weight = pesos$;
+
+\paragraph{}
+\paragraph{}
+\emph{•} Ham_{7,4} \rightarrow $W = 3$;
+\paragraph{}
+\emph{•} Ham_{31,26} \rightarrow $W = 3$;
+
+\paragraph{}
+Logo, a expressão geral aproximada (Hamming: d é sempre igual a 3). Assim, usamos a equação $2.5$ para o cálculo de Hamming.
+
+\paragraph{}
+%secção 2.8
+\section{cógigo CRC}
+
+\paragraph{}
+\emph{•} G_{4-ITU}, $m=4$ \rightarrow $W = erro$; %19
+\paragraph{}
+\emph{•} G_{8-CCITT}, $m=4$ \rightarrow $W = 4$; %263
+\paragraph{}
+\emph{•} G_{8-my}, $m=4$ \rightarrow $W = 4$; %483
+
+\paragraph{}
+\paragraph{}
+\emph{•} G_{4-ITU}, $m=26$ \rightarrow $W = 2$; %19
+\paragraph{}
+\emph{•} G_{8-CCITT}, $m=26$ \rightarrow $W = 4$; %263
+\paragraph{}
+\emph{•} G_{8-my}, $m=26$ \rightarrow $W = 4$; %483
+
+
+\paragraph{}
+\paragraph{}
+\emph{•} A expressão geral para os $W = 4$ é:
+
+\paragraph{}
+$P_{nd}^{dh}(n,Peb)\approx \frac{1 - [(1 - P_{eb})^n] - [ C_{1}^n * P_{eb}^1 * (1 - P_{eb})^{n-1}] - [ C_{2}^n * P_{eb}^2 * (1 - P_{eb})^{n-2}] - [ C_{3}^n * P_{eb}^3 * (1 - P_{eb})^{n-3}] - [ C_{4}^n * P_{eb}^4 * (1 - P_{eb})^{n-4}]}{1-(1-P_{eb})^n}}$ 
+
+%perguntas 3
+\chapter{Correção de Erros}
+
+%secção 3.1
+\section{Método de correção de erros FEC}
+
+\subsection{Ham(7,4)}
+
+\paragraph{}
+\emph{•} $= (1-P_{0}) + (1 - P_{1})$
+
+\begin{equation}
+	= (1 - P_{eb})^{7} + + C_{1}^7 * P_{eb} * (1 - P_{eb})^6]
+\end{equation}
+
+	
+\paragraph{}
+\subsection{Ham(31,26)}
+
+\paragraph{}
+\begin{equation}
+	= (1 - P_{eb})^{31} + C_{1}^{31} * P_{eb} * (1 - P_{eb})^{30}]
+\end{equation}
+\paragraph{}	
+
+
+%secção 3.2
+\section{}
+
+\subsection{Expressão de tempo de transferência}
+
+\paragraph{}
+\emph{•} O tempo de atraso vai ser igual à soma do Tempo de propagação mais o Tempo de transferência da trama.
+
+\paragraph{}
+\begin{Large}
+\begin{equation}
+T_{atraso} = T_{propagação} + T_{transferência}
+\end{equation}
+\end{Large}	
+
+\paragraph{}
+\emph{•} Assumimos que não existe tempo de atraso entre o emissor e o recetor. Se existir um $T_{delay}$, só precisamos de somar mais uma parcela.
+
+\paragraph{}
+%secção 3.3
+\section{Método de correção de erros ARQ: stopAndWait}
+
+\subsection{expressão média do tempo de atraso (código CRC)}
+
+\paragraph{}
+\emph{•} Usando o código CRC, queremos a expressão média do tempo de atraso:
+
+\paragraph{}
+$\sum\limits_{i=1}^{+\infty} n * p^n = \frac{p}{(1 - p)^2}$
+
+\paragraph{}
+$E[D] = N_{re-transmissões} + T_{transferência}$
+
+
+\paragraph{}
+sendo:
+$N_{re-transmissões} = N_{transmissões}$
+
+
+\paragraph{}
+então:
+$N_{transmissões} = \frac{1}{P_{sucesso}} + T_{rtt} = 2 * T_{atraso}$
+
+\paragraph{}
+\begin{Large}
+\begin{equation}
+N_{transmissões} = \frac{1}{(1 - P_{ok}) + (1 - P_{nd)})} + (2 * T_{atraso})
+\end{equation}
+\end{Large}	
+
+
+%perguntas 4
+\chapter{Ritmo binário útil}
+
+
+\section{Método de correção de erros ARQ: stopAndWait}
+
+%secção 4.1
+\subsection{taxa de utilização e ritmo binário útil}
+
+\paragraph{}
+\begin{Large}
+\begin{equation}
+r_{binário} = \frac{L}{T_{tx}}
+\end{equation}
+\end{Large}	
+
+\paragraph{}
+\emph{•} $U = \frac{r_{binário}}{E[D]}$
+
+\paragraph{}
+\begin{Large}
+\begin{equation}
+U = \frac{\frac{L}{T_{tx}}}{N_{re-transmissões} + T_{transferência}}
+\end{equation}
+\end{Large}	
+
+%perguntas 5
+\chapter{Geração de tráfego e filas de espera}
+
+%secção 5.1
+\section{Expressão geral}
+
+\paragraph{}
+Expressão geral para calcular valor médio na fila em função de $\lambda$ (demonstração):
+
+\paragraph{}
+\emph{•} É-nos dado no enunciado que:
+$E[w] = \frac{\lambda * (E[D^2])}{2 * (1 - \rho)}$
+
+\paragraph{}
+\emph{•} Também sabemos que: 
+$N_{T} = \frac{1}{P_{sucesso}} = \frac{1}{(1-P_{eb})}$
+
+\paragraph{}
+\emph{•} Por sua vez $(D = delay)$: 
+\paragraph{}
+$D = T_{rtt} * N_{T} = T_{rtt} * \frac{1}{(1-P:{eb})}$ 	
+
+\paragraph{}
+\emph{•} Calculando primeiro $(E[D])$:
+
+\paragraph{}
+sendo:
+\paragraph{} 
+$D_{i} = T_{rtt} * i$; 
+\paragraph{}
+$P_{i} = P_{eb}^{i-1} * (1-P_{eb})$ 
+\paragraph{}
+$\sum\limits_{i=1}^{+\infty} i * P_{eb}^i = \frac{P_{eb}}{(1-P_{eb})^2}$
+
+\paragraph{}
+\paragraph{}
+então:
+\paragraph{}
+$E[D] = \sum\limits_{i=1}^{+\infty} D_{i} * P_{i} = \sum\limits_{i}^{+\infty} (T_{rtt} * i) * [ P_{eb}^{i-1} * (1 - P_{eb})]$
+
+\paragraph{}
+$E[D] = T_{rtt} \sum\limits_{i}^{+\infty} (i) * [ P_{eb}^i * P_{eb}^{-1} * (1 - P_{eb})]$
+
+\paragraph{}
+$E[D] = T_{rtt} * \frac{1}{(1 - P_{eb})}$
+
+\paragraph{}
+\paragraph{}
+\emph{•} Passando para o cálculo de $D^2$: $(E[D^2])$
+
+\paragraph{}
+sendo:
+\paragraph{} 
+$\sum\limits_{i=1}^{+\infty} i^2 * P_{i} = P_{eb} * (\frac{(1 + P_{eb})}{(1-P_{eb})^3)}$
+
+\paragraph{}
+\paragraph{}
+$E[D^2] = \sum\limits_{i=1}^{+\infty} (T_{rtt} * i)^2 * [P_{eb}^{i-1} * (1 - P_{eb})]$
+
+\paragraph{}
+$E[D^2] = T_{rtt}^2 * \sum\limits_{i=1}^{+\infty} (i)^2 * [P_{eb}^{i} * P_{eb}^{-1} * (1 - P_{eb})]$
+
+\paragraph{}
+$E[D^2] = T_{rtt}^2 * \sum\limits_{i=1}^{+\infty} (i)^2 * [P_{eb}^{i} * (1 - P_{eb}) * P_{eb}^{-1} * (\frac{P_{eb}}{P_{eb}})]$
+
+\paragraph{}
+$E[D^2] = T_{rtt}^2 * P_{eb} * \frac{(1 + P_{eb})}{(1 - P_{eb})^2} * (\frac{1}{P_{eb}})$
+
+\paragraph{}
+$E[D^2] = T_{rtt}^2 * \frac{(1 + P_{eb})}{(1 - P_{eb})^2}$
+
+
+\paragraph{}
+\paragraph{}
+\emph{•} Para terminar, é dado no enunciado que:
+\paragraph{}
+$E[w] = \frac{\lambda * (E[D^2])}{2 * (1 - \rho)}$
+
+\paragraph{}
+\paragraph{}
+
+\begin{Large}
+\begin{equation}
+E[w] = \frac{\lambda * (T_{rtt}^2 * \frac{(1 + P_{eb})}{(1 - P_{eb})^2})}{2 * (1 - \rho)}$ 
+\end{equation}
+\end{Large}
+\paragraph{}
+
+%conclusão
+\chapter{Conclusão}
+
+\paragraph{}
+Concluímos esta primeira parte do projeto, ficando com as experiência calculadas e algumas experiências já feitas. Ao longo do mesmo, ficou claro a importância do bit redundante (r). A distância de Hamming, conceito transversal a vários algoritmos. A utilidade de utilizar probabilidades ao abordar Redes digitais. Pois é uma forma de termos uma ideia de onde vamos investir tempo a resolver problemas, nos concentrando naqueles em que é mais provável acontecerem. 
+
+\paragraph{}
+Qual o processo de envio, re-envio, de emissor para receptor. E quais os diferentes tempos envolvidos no processo. Terminando esta parte do projecto com o cálculo de uma expressão para valores médios.
+
+\paragraph{}
+Aspetos a concluir são a criação de gráficos em Excel, de forma a visualizar e perceber numa função o comportamento de uma Rede. É uma maneira extremamente visual, que é amplamente usada na área da engenharia para mais facilmente ver onde está um problema. É comum olhar para expressões analíticas. E nem sempre ser capaz de retirar informações delas. Mas os gráficos, bem como regressões lineares, ajudam muito os engenheiros a melhor performance, eficiente e produtividade de sistemas, como é o caso das Redes.
+
+%inserir figura
+\paragraph{}
+\begin{figure}[!htp]
+\centering
+\includegraphics[scale=1]{redes_conclusao.jpg}  
+\caption{Legenda}
+\end{figure}
+
+
+
+.
+\end{document}

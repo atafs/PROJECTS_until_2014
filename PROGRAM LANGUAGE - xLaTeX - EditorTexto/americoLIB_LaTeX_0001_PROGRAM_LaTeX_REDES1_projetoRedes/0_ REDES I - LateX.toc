@@ -1,0 +1,124 @@
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {chapter}{\numberline {2}Detec\IeC {\c c}\IeC {\~a}o de erros}{3}
+\contentsline {section}{\numberline {2.1}Criar o $CRC{_8my}$ do nosso grupo}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {2.2}Express\IeC {\~a}o da taxa de redund\IeC {\^a}ncia}{3}
+\contentsline {subsection}{\numberline {2.2.1}c\IeC {\'a}lculo do n:}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsection}{\numberline {2.2.2}c\IeC {\'a}lculo da taxa:}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {section}{\numberline {2.3}Probabilidade de estar ok}{3}
+\contentsline {subsection}{\numberline {2.3.1}c\IeC {\'a}lculo de probabilidade de estar ok}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {2.4}Bit de paridade: express\IeC {\~a}o exata}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {2.5}Bit de paridade: express\IeC {\~a}o aproximada}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {section}{\numberline {2.6}C\IeC {\'o}digo de hamming: express\IeC {\~a}o aproximada}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {2.7}C\IeC {\'o}digo de hamming}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {2.8}c\IeC {\'o}gigo CRC}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {chapter}{\numberline {3}Corre\IeC {\c c}\IeC {\~a}o de Erros}{6}
+\contentsline {section}{\numberline {3.1}M\IeC {\'e}todo de corre\IeC {\c c}\IeC {\~a}o de erros FEC}{6}
+\contentsline {subsection}{\numberline {3.1.1}Ham(7,4)}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsection}{\numberline {3.1.2}Ham(31,26)}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {section}{\numberline {3.2}}{6}
+\contentsline {subsection}{\numberline {3.2.1}Express\IeC {\~a}o de tempo de transfer\IeC {\^e}ncia}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {section}{\numberline {3.3}M\IeC {\'e}todo de corre\IeC {\c c}\IeC {\~a}o de erros ARQ: stopAndWait}{6}
+\contentsline {subsection}{\numberline {3.3.1}express\IeC {\~a}o m\IeC {\'e}dia do tempo de atraso (c\IeC {\'o}digo CRC)}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {chapter}{\numberline {4}Ritmo bin\IeC {\'a}rio \IeC {\'u}til}{8}
+\contentsline {section}{\numberline {4.1}M\IeC {\'e}todo de corre\IeC {\c c}\IeC {\~a}o de erros ARQ: stopAndWait}{8}
+\contentsline {subsection}{\numberline {4.1.1}taxa de utiliza\IeC {\c c}\IeC {\~a}o e ritmo bin\IeC {\'a}rio \IeC {\'u}til}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {chapter}{\numberline {5}Gera\IeC {\c c}\IeC {\~a}o de tr\IeC {\'a}fego e filas de espera}{9}
+\contentsline {section}{\numberline {5.1}Express\IeC {\~a}o geral}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
