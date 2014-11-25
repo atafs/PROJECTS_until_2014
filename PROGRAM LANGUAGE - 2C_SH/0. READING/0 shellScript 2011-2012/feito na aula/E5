@@ -1,0 +1,6 @@
+for f in *. c
+do
+	gcc $f -o `basename $f .c` 
+	echo `date`: gcc $f -o `basename $f .c` >> log.txt
+done
+

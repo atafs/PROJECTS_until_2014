@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#A construção do padrão admite mecanismos que são mais ou menos familiares:
+#| - alternativas (or)
+#* - qualquer cadeia de caractares (0 ou mais)
+#? - um caracter qualquer
+
+#O padrão * captura todas as sequências, conseguindo-se assim uma forma de obter um "default";
+
+
+echo -n "Insira um Club: "; read x
+
+case $x in
+	benfica|sporting) echo "Lisboa";;
+	porto|boavista) echo "Porto";;
+	*) echo "Outras cidades";;
+esac
+
+

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Na realidade o comando expr serve para fazer o cálculo de expressões simples, quer em texto quer
+#em números inteiros, sendo portanto, também, um alternativa ou complemento ao cálculo numérico
+#com $(( ));
+#Ex: o seguinte script lê uma string, representando o nome completo de uma pessoa, e mostra apenas
+#o primeiro nome próprio:
+
+#Mais exercícios:
+#exercício (faça todos os cálculos com expr);
+#- altere para mostrar o primeiro e último nome;
+#- altere para mostrar o último apelido e depois todos os outros nomes;
+
+
+
+
+
+echo -n "String: "; read s
+
+n=`expr index "$s" " "`
+if [ $n -gt 0 ] ; then
+	m=`expr $n - 1`
+fi
+
+

@@ -1,0 +1,73 @@
+#!/bin/bash
+
+
+#4.2­‐ if / test	/ review	
+#É importante perceber a subtileza da "condição" do if. Numa linguagem de programação
+#clássica a decisão do if é baseada numa condição. Na shell a decisão é baseada no
+#resultado da execução de um comando.
+#Exemplo: considere o seguinte comando
+
+
+
+#> chmod 700 x
+
+
+
+#Se o ficheiro x existir (e houver permissão) o comando é executado com sucesso; caso contrário, a
+#operação não é executada e aparece uma mensagem de erro. Verifique o efeito no script seguinte
+#(bsh_2b)
+#!/bin/bash
+
+
+
+
+
+#echo "Ficheiro: "
+#read x
+#if chmod 700 $x
+#then
+#	echo "Comando executado!"
+#else
+#	echo "Como deve ter percebido, não correu bem."
+#fi
+
+
+
+
+
+#A variável especial $? representa a o resultado do último comando executado. Veja o valor de $?
+#após o comando
+
+
+
+
+#chmod 700 x
+#echo $?
+
+
+
+
+#(veja para o caso de sucesso e para o caso de insucesso na execução do comando).
+# qual o problema com este script ?
+#!/bin/bash
+
+
+
+
+
+chmod 700 users.txt
+if $?
+then
+	echo "Ok"
+else
+	echo "Erro"
+fi
+
+
+
+
+
+
+
+
+

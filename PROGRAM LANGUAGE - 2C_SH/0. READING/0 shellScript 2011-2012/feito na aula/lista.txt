@@ -1,0 +1,21 @@
+total 732
+-rw-rw-r-- 2 atafs atafs      0 2012-04-18 20:46 a
+-rw-rw-r-- 1 atafs atafs 221365 2012-04-18 19:48 admin - v1.02.pdf
+-rw-rw-r-- 1 atafs atafs   5891 2012-04-18 22:13 Aula9a12
+-rw-rw-r-- 1 atafs atafs   3932 2012-04-18 21:19 Aula9a12~
+lrwxrwxrwx 1 atafs atafs      1 2012-04-18 21:08 b -> x
+-rwxrwxrwx 1 atafs atafs     26 2012-04-18 21:50 E1
+-rwxrwxrwx 1 atafs atafs     59 2012-04-18 21:53 E2
+-rwxrwxr-x 1 atafs atafs     50 2012-04-18 22:01 E4
+-rwxrwxrwx 1 atafs atafs    104 2012-04-18 22:11 E5
+-rwxrwxr-x 1 atafs atafs   8376 2012-04-18 22:01 ex_1
+-rwxr-xr-x 1 atafs atafs     67 2012-04-18 20:01 ex_1.c
+-rw-rw-r-- 1 atafs atafs     23 2012-04-18 21:26 lista
+-rw-rw-r-- 1 atafs atafs      0 2012-04-19 00:49 lista.txt
+-rw-rw-r-- 1 atafs atafs    258 2012-04-18 22:13 log.txt
+drwxrwxr-x 2 atafs atafs   4096 2012-04-18 20:57 pastaTeste
+-rw-rw-r-- 1 atafs atafs    229 2012-04-19 00:45 programas.zip
+-rw-rw-r-- 1 atafs atafs  69280 2012-04-18 19:52 resumo_comandos.pdf
+-rw-rw-r-- 1 atafs atafs 392828 2012-04-18 19:48 shell - v1.04.pdf
+-rw-rw-r-- 1 atafs atafs      0 2012-04-19 00:47 teste t.c
+-rw-rw-r-- 2 atafs atafs      0 2012-04-18 20:46 x

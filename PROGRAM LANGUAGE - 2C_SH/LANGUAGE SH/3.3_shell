@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#3.3 ‐ basename	
+  
+#Há um conjunto de comandos que, embora possam ser usados interactivamente, são especialmente
+#importantes no quadro da programação com a shell; é o caso, por exemplo, do comando basename;
+#o comando extrai o nome base de um nome completo de ficheiro, retirando:
+#- o caminho até ao directório;
+#- a parte final (se for igual ao segundo argumento)
+
+
+
+
+basename /etc/passwd   		#passwd
+basename teste.c .c		#teste
+basename /etc/rc.1 .1		#rc
+basename teste.c .x		#teste.c
+
+
+
+
+

@@ -1,0 +1,7 @@
+for f in *.c
+do
+
+	echo todos dos ficheiros em c: $f
+done
+
+

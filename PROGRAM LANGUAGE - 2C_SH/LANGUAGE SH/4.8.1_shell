@@ -1,0 +1,26 @@
+#/bin/bash
+
+#4.8.1 - Acertar na soma
+#Faça um script em bash que atribua números aleatórios às variáveis x e y, faça a sua soma e peça ao
+#utilizador para adivinhar o resultado. Quando o utilizador acertar, o script deverá indicar o tempo que
+#foi usado para fazer a conta em segundos.
+
+
+
+
+
+
+x=$(( $RANDOM / 100 ))
+y=$(( $RANDOM / 100 ))
+s=$(($x+$y))
+di=$(date "+%s")
+echo -n "Qual a soma de $x com $y ? "
+read g
+while [[ "$g" -ne $s ]]; do
+	echo -n "Tente de novo: "
+	read g
+done
+df=$(date "+%s")
+t=$(($df-$di))
+echo "Acertou em $t segundos"
+

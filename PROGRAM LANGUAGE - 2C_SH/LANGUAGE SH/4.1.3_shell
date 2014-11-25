@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Há 3 elementos sintácticos que impedem a expansão: as " ", as ' ' e a \.
+
+#As aspas são as mais fracas: escapam apenas alguns caracteres. Não escapam, por exemplo, o $ e,
+#por isso, as variáveis colocadas entre aspas continuam a ser expandidas.
+#Por exemplo:
+
+
+
+echo "*** $HOME ***"
+
+
+
+#torna os * literais, mas mantém a expansão da variável $HOME
+#As ' ' escapam todos os caracteres e o \ escapa o caracter seguinte (apenas 1) seja ele qual for.
+#Por exemplo:
+
+
+
+
+echo ' $HOME'
+echo \$HOME
+#(para escrever \ usa-se \\).
+

@@ -1,0 +1,16 @@
+# dúvidas: () está o que eu percebi...
+
+#echo(printf) -n(???)
+
+#date(função) "+%d de %B de %Y" (não devia terminar com ";"_ ??? como o programa sabe o que é B e o Y ???)
+
+#o que é a função who ??? no man who diz que são os utilizadores logged on...
+
+#tentei usar o PATH=$PATH:. para colocar o programa na lista de directórios onde o bash procura comandos. Como funciona o $PATH:. ??? como sabe a que programa me refiro???
+
+#!/bin/bash
+echo -n "Data: "
+date "+%d de %B de %Y"
+echo "LISTA DE UTILIZADORES"
+who
+

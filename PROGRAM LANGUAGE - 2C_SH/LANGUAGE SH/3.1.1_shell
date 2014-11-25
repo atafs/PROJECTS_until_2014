@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#3. Comandos	
+  
+#Alguns comandos de apoio a scripts
+#3.1 ‐ expr	
+  
+#O comando expr (/bin/expr) contempla também algumas operações com strings; em particular é
+#a forma mais fácil de fazer uma operação importante que é localizar uma string dentro de outra;
+#Exemplo: o script seguinte lê uma string e indica em que posição se encontra a letra “a”:
+
+
+
+echo -n "String: "; read s
+echo `expr index $s a`
+

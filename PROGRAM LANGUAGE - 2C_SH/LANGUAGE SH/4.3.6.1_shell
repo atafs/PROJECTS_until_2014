@@ -1,0 +1,64 @@
+#!/bin/bash
+
+
+#A seguinte versão do script comp verifica se é dado um argumento e se o ficheiro correspondente
+#existe; caso uma das condições não se verifique o script termina com erro:
+#!/bin/bash
+
+
+
+
+
+#if [ ! $# -eq 1 ] || [ ! -f $1 ] ; then
+#	echo "$0: invalid arguments"
+#	exit 1
+#fi
+#cc $1 –o `basename $1 .c`
+#exit $?
+
+
+
+
+
+#Uma alternativa poderia ser:
+
+
+
+
+
+
+if [ $# -eq 1 ] && [ -f $1 ] ; then
+	:
+else
+	echo "$0: invalid arguments"
+	exit 1
+fi
+cc $1 –o `basename $1 .c`
+exit $?
+
+
+
+
+
+#Verificadas as duas condições é executado o comando : (que "não faz nada") e o script segue depois
+#do if; de contrário, termina com exit;
+#O comando
+
+
+
+
+
+#comp teste.c && teste
+
+
+
+
+
+#compile o programa e, em caso de sucesso, execute-o;
+
+
+
+
+
+
+

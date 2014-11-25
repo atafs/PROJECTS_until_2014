@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+#Estes métodos ganham ainda maior utilidade com a possibilidade de escolher o separador de
+#palavras, que pode ser indicado à shell na variável IFS; normalmente o separador é o espaço, mas
+#pode-se alterar através desta variável;
+#Exemplo: o seguinte script mostra a lista de directório da PATH, um por linha:
+
+
+
+
+
+
+IFS=:
+for d in $PATH ; do
+echo $d
+done
+

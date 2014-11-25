@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# -lt : less then
+# -gt : greater then
+#(para uma lista completa dos operadores veja o manual do comando man test)
+# Faça outras versões do mesmo script usando as opções -eq e -gt;
+
+
+#O mesmo comando permite comparar números inteiros; algumas das opções são exemplificadas no
+#script seguinte:
+
+
+x=700
+n
+while [ -z $n ] || [ $n -ne $x ]; do
+	
+	echo -n "diga um número: "; read n
+	if [ ! -z $n ]; then
+		if [ $n -lt $x ] ; then
+			echo "Abaixo"
+		elif [ $n -gt $x ] ; then
+			echo "Acima"
+		else
+			echo "É esse mesmo!!"
+		fi
+	fi
+done
+
+
+
+

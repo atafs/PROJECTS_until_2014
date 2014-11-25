@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#Exemplo: o seguinte script compila um programa em C, criando um executável com o mesmo nome;
+#o nome do ficheiro é dado num argumento para o script; o primeiro passo é justamente verificar o
+#argumento:
+
+
+
+
+
+
+if [ ! $# -eq 1 ] ; then
+	echo "usage: $0 <file>"
+	exit
+fi
+cc $1 -o `basename $1 .c`
+
+
+
+
+
+
+#Além da função de instrução de controlo, o exit tem outro efeito importante que é estabelecer o
+#resultado – o exit status do comando;
+

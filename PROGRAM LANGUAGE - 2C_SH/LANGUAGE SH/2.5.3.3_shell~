@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Um outro exemplo... o que faz ?
+
+
+
+echo "Insira um ficheiro: "; read x
+
+case $x in
+	*.txt) echo "ficheiro de texto";;
+	*.C|*.c|*.h) echo "c/c++";;
+	*) echo "outros ficheiros";;
+esac
+

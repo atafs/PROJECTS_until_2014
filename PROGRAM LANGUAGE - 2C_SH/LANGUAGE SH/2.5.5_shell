@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#O ciclo while é um ciclo de condição: repete a execução de um bloco de comandos enquanto se
+#verificar uma dada condição de controlo (ou até ela deixar de se verificar);
+
+#while [ condição ]
+#do
+	#lista-de-comandos
+#done
+
+
+#Altere o exemplo anterior para fazer um pequeno jogo de aproximação: após cada tentativa o script
+#deve ajudar dizendo se o valor certo é para "Cima" ou para "Baixo".
+
+
+
+y=700
+x=0
+while [ $x != 700 ]
+do
+	echo -n "Adivinhe o numero: "; read x
+done
+
+
+

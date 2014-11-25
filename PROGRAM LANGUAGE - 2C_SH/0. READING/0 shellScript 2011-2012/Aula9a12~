@@ -1,0 +1,166 @@
+Aula prática:
+
+Shell o nome que se dá a um programa;
+
+Uma das shells chama-se: bash; standard actual das shell;
+
+ps: serve para ler os PID (incluído a shell); 
+
+faz duas coisas:	aceitar comandos e executar;
+			servir como ambiente para escrever programas;
+
+um comando é um programa: ls -1 /bin/ls... localização do programa
+
+echo $PATH ... comando para procurar um programa
+
+pwd ... dá-me o directório onde estou....
+
+export... serve para colocar coisas na PATH... de forma a ler, incluído a própria pasta onde estou (por defeito não lê...
+
+ls -l ... a opção -l dá um argumento (no formato longo);
+man ls ... muitas opções (no resumos estão as mais usadas)
+uma linha para cada ficheiros...
+Outut: 	- ou d (ficheiro ou directório)
+	permissões (3 ternos: r - read; w - write/alterar; x - posso executar)
+	1ºterno: dono do ficheiro; 2ºterno:   ; 3ºterno: grupo do ficheiro;
+	rw-				r--		r--	os outros só podem ler;
+	rw-				---		--- 	só para mim, não quero que os outros leiam
+	rwx				r.x		r-x	
+
+
+Só o dono pode mudar tudo... o dono posso dar e tirar permissões para alterar o ficheiro (não posso dar a outro)...
+
+chmod ... mudar as permissões... exemplo: 644
+
+read	4
+write	2
+x 	1
+
+777... permissões máxima... e a soma do que quero que dá cada terno... 744 = rwx r-- r--
+
+*.  qualquer sequência de caracteres... qualquer coisa que termina em txt... ex: *.txt
+
+ls -l teste ... se for um ficheiro aparece o ficheiro
+ls -l teste1 ... se for directório, mostra o que está dentro do directório...
+ls -ld teste1 ... mostra só o directório...
+
+read ... para fazer um ls tenho de permissão de read
+write... 
+
+directório... tem nomes de ficheiros... os ficheiros estão noutro sector do disco... disco é um espaço com blocos... 
+na realidade os ficheiros não estão dentro do directório... 
+
+alterar password... criar um programa... quem executar este programa, enquanto o estiver a usar, pode aceder...
+
+root... faz o que quizer... super user... 
+
+su ... tornar-me num super user... 
+
+um servidor... máquina com um administrador da máquina... 
+
+Mudar o nome da shell:
+bash
+echo $PS1
+PS1="Mostra a data"
+exit
+
+pwd ... vejo em que directório estou...
+touch nome  ... cria um novo ficheiro
+cp ... muda o nome... usando um modo absoluto (funciona em qualquer parte do sistema)
+
+cp x ../Aulas8e9  ... nomes relativos em relação a nomes correntes...
+copiar ficheiro para ficheiro... copia o ficheiro
+copiar ficheiro para directório... 
+
+se começa por barra... é um nome absoluto
+caso contrário... é um nome relativo mas que só funciona onde estou...
+
+mv x pastaTeste... faz umas espécie de copy and past
+mv x y... muda o nome (dupla funcionalidade).
+
+Links:
+i- node
+
+array: com um índice:
+	[]	[]	[]	[]	....
+	0	1	2	3	....
+
+contém nome e índice... tem todas as permiçoes, bem como os sectores do disco onde está o conteúdo
+
+comando ln... cria uma nova entrada no directório para o mesmo i- node
+passamos a ter o mesmo ficheiro com dois nomes... exemplo: ln x a
+Os dois nomes podem estar no mesmo directório...
+pode dar jeito ter dois nomes... um link é uma entrada no directório... 
+são mesmo dois nomes para o mesmo ficheiro.. posso trabalhar num ou noutro... muda o mesmo...
+HardLink
+se mudar permissões, muda para os links todos...
+
+A alternativa: é um Softlink
+exemplo: ln -s x y
+i- node é um índice
+
+o shortcut do windows só tem o nome do outro... é um ficheiro especial... quando queremos aceder ao s, o SO muda de s para a...
+o soflink é um apontador para o ficheiro
+Para além do - e d, também existe o l...
+SoftLink
+
+cat ou more... mostra tudo de uma vez ou pag a pag...
+
+
+| pipe
+> < >> >> ... tudo sinais importantes em shell
+
+ls -l > lista... guarda num fiheiro de nome lista a listagem em vez de a mostrar no ecrã
+ls -l >> lista... guarda no mesmo ficheiro esta nova listagem
+
+man date ... formas de mudar a data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

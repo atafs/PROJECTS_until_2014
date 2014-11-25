@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#O comando seguinte exemplifica a utilização do sed para transformar o conteúdo de um ficheiro:
+
+sed 's/a/Aluno/' /etc/passwd
+
+
+#Neste caso o comando para o sed é s/a/Aluno e tem como efeito substituir a por Aluno;
+#(como é evidente, o sed não altera o ficheiro; apenas o lê e mostra o seu conteúdo transformado);
+#Este comando sed tem a forma geral:
+
+#s/expressão-1/expressão-2/
+
+#e tem como efeito substituir a expressão-1 do texto original pela expressão-2;
+#(s/expressão-1/expressão-2/g para substituir todas as ocorrências de expressão-1 na mesma linha);
+
+
+
+
+#Exemplo: eliminar a palavra “do” e substituir todos os “a” por “AA”
+
+#echo “maria do carmo joaquina” | sed ‘s/do //g; s/a/A/g’
+

@@ -1,0 +1,6 @@
+Qua Abr 18 22:12:12 WEST 2012: gcc *. -o *.
+Qua Abr 18 22:12:12 WEST 2012: gcc c -o c
+Qua Abr 18 22:12:25 WEST 2012: gcc *. -o *.
+Qua Abr 18 22:12:25 WEST 2012: gcc c -o c
+Qua Abr 18 22:13:24 WEST 2012: gcc *. -o *.
+Qua Abr 18 22:13:24 WEST 2012: gcc c -o c

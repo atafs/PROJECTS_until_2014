@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#2.5.6 - Substituição
+#Os delimitadores ` ` substituem um comando (escrito entre os dois delimitadores) pelo seu output;
+
+#Este mecanismo é um precioso auxiliar para scripts. Por exemplo, pode ser utilizado para o backup
+#de um ficheiro com a data actual.
+
+
+
+x=`date`
+echo ""
+echo $x
+echo ""
+
+
+
+

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#3.6 ­‐ awk	
+  
+#O awk é um comando muito amplo que engloba, ele próprio, uma linguagem para programação de
+#scripts de manipulação de texto; vamos apenas algumas construções simples/típicas com awk;
+#O exemplo seguinte mostra apenas uma parte (2 das colunas) do resultado do comando ls -l;
+
+
+#ls -l | awk ' {print $1 $3 ; }'
+
+
+#a exemplo do sed, também o awk aceita um "comando" passado como argumento;
+#o comando é indicado entre { } e contém uma ou mais instruções, que terminam com ;
+#Neste caso a instrução é o print que "imprime" no ecrã;
+
+#o que importa aqui é o facto de o awk, ao processar cada linha, dividir os campos (separados por
+#espaços) em variáveis $1 $2 etc; assim, ao escrever estas variáveis, estamos a escrever as colunas
+#1 e 3 do resultado do ls -l;
+#O exemplo anterior imprime todas as linhas; uma variante é um comando da forma:
+
+#/expressão-regular/ { comandos }
+
+#que aplica o bloco de comandos apenas à linhas seleccionadas pela expressão-regular. Exemplo:
+#Mostra o mesmo conteúdo mas apenas para os directórios;
+
+
+ls -l | awk '/^d/ { print $1 $3 }'
+
+

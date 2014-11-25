@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+#Considere a seguinte versão do exemplo b):
+
+#- se não for dado um argumento o script termina com saída em de erro (diferente de 0);
+#- ao contrário, se tudo correr bem, termina com 0; note que o exit 0 final não tem interesse
+#  de execução (não adianta fazer exit quando o script vai terminar "sozinho"); o interesse é
+#  apenas estabelecer o resultado de saída em situação normal - ou seja, 0;
+#- em vez de exit 0 não seria melhor exit $? ?
+
+
+
+if [ ! $# -eq 1 ] ; then
+	echo "usage: $0 <file>"
+	exit 1
+fi
+cc $1 -o `basename $1 .c`
+exit 0
+
+
+
+
+
+
+

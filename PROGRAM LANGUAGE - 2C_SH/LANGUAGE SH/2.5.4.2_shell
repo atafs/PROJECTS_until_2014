@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Muitas vezes o for é utilizado para percorrer a lista de ficheiros de um directório. Para formação dessa
+#lista aplicam-se os mecanismos habituais de expansão da shell:
+
+
+
+for i in *.sh
+do
+	echo "entrada: $i"
+done
+

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#2.5.4 - For
+#O comando for permite repetir um conjunto de comandos, para cada um dos elementos de uma lista.
+#A sua sintaxe é
+
+#for variavel in lista
+#do
+#lista-de-comandos
+#done
+
+
+
+for i in "a b c"
+do
+echo "i= $i"
+done
+

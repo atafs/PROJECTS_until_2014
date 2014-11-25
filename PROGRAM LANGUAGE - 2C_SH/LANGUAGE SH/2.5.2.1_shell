@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#2.5.2 - Teste com ficheiros
+#Um outro grupo importante de opções do comando test serve para testar condições sobre ficheiros;
+#Por exemplo, o seguinte script verifica se um dado ficheiro existe:
+
+
+echo -n "Insira o nome do ficheiro: "; read y
+
+if [ -f $y ]; then
+	echo ""
+	echo "$y existe"
+	echo ""
+else
+	echo "$y não existe"
+fi
+
+
+
+

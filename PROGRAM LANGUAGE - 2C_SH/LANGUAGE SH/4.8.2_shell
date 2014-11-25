@@ -1,0 +1,105 @@
+#!/bin/bash
+
+#4.8.2 - Listar os ficheiros executáveis da directoria actual
+#4.8.3 - Compilar todos os ficheiros .c numa dada directoria
+
+#4.8.4 - Jogo da forca
+#Considere o ficheiro words.txt, com o seguinte conteúdo
+
+	#words.txt
+	#barbatana
+	#camelo
+	#carro
+	#caramelo
+
+#./forca.sh
+
+
+
+
+
+
+#readc: lê um caracter
+readc() {
+	echo -n "letra ( dispõe de $ntry tentativas ) : "
+	read c
+}
+
+#marca : marca o caracter lido
+marcac() {
+	newd=""
+	ok=0
+	tryok=1	
+	for (( i=0; i < n ; i++)) ; do
+		sx=${s:i:1}
+		dx=${d:i:1}
+		if [ $sx = $c ] || [ $dx != "-"
+			newd="$newd$sx"
+		else
+			newd="$newd-"
+			ok=1
+		fi
+
+		if [ $sx = $c ] && [ $dx = "-" ] ; then
+			tryok=0
+		fi
+	done
+	d=$newd
+	ntry=$(( $ntry - $tryok ))
+}
+
+#getword : obtém uma palavra do ficheiro
+getword() {
+	wn=`cat words | wc -l`
+	wx=$(( 1 + $wn * $RANDOM / 2**15 ))
+	s=`cat words | head -$wx | tail -1`
+}
+
+
+#main
+#s=barbatana
+getword
+
+n=${#s}
+d=""
+for (( i=0; i < n ; i++)) ; do
+	d="$d-"
+done
+echo $d
+
+ok=1
+ntry=7
+while [ ! $ok -eq 0 ] && [ $ntry -gt 0  ] ; do
+
+	readc
+	marcac
+	echo $d
+done
+
+if [ $ok -eq 0 ] ; then
+	echo "GANHOU."
+else
+	echo "PERDEU."
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+# 
+
+
+x=ABC
+set
+echo Valor de x = $x
+unset x
+set
+echo Valor de x = $x
+

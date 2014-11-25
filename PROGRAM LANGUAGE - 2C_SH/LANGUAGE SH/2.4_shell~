@@ -1,0 +1,9 @@
+
+#edads
+
+
+#!/bin/bash
+echo "Diga qualquer coisa: "
+read x
+echo "Disse: $x"
+

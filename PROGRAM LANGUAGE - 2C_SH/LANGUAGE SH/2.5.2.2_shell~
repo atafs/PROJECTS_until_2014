@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#O seguinte script exemplifica algumas das opções mais do test para ficheiros;
+
+
+if [ -z $1 ] ; then  					# falta se não houver argumento
+	echo "usage: $0 ficheiro"
+	exit						# terminar o script
+fi
+
+
+if [ -f $1 ] ; then; echo "$1 é um ficheiro normal"; fi
+if [ -d $1 ] ; then; echo "$1 é um directório"; fi
+if [ -r $1 ] ; then; echo "$1 term permissão r"; fi
+if [ -w $1 ] ; then; echo "$1 tem permissão w"; fi
+if [ -x $1 ] ; then; echo "$1 tem permissão x"; fi
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+
+#1.4‐ A directoria /dev	
+  
+#A directoria /dev contém ficheiros especiais para os diferentes dispositivos. Estes ficheiros são
+#criados aquando da instalação e mais tarde através do script /dev/MAKEDEV. A lista que se
+#apresenta a seguir não é exaustiva e muitos dos dispositivos presentes nesta directoria necessitam
+#de suporte no kernel.
+
+#/dev/hda
+#O ficheiro /dev/hda é o primeiro disco IDE master no controlador IDE principal. O ficheiro /dev/hdb é o
+#disco slave. Da mesma forma os ficheiros /dev/hdc e /dev/hdd são os discos master e slave do
+#controlador secundário. Cada disco está dividido em partições. As partições 1 a 4 são partições
+#primárias enquanto que as partições com número superior ou igual 5 são partições lógicas. Cada
+#partição é acessível a partir de um ficheiro. Por exemplo, /dev/hda1 refere-se à partição primária 1 do
+#disco master do controlador principal.
+
+#/dev/sda
+#Tal como no caso dos controladores IDE, os dispositivos da família /dev/sd* referem-se a dispositivos
+#SCSI. Nesta categoria incluem-se também os discos da família SATA I e SATA II. Por exemplo:
+
+#/dev/sda1 refere-se à partição principal do disco principal do controlador SCSI (ou SATA).
+
+#/dev/null
+#O dispositivo /dev/null funciona como uma espécie de buraco negro: para este dispositivo pode-se
+#enviar dados que serão simplesmente descartados. Tal como já foi visto, este dispositivo pode ser
+#usado para reencaminhar o output de um comando quando não se está interessado em visualizar
+#qualquer informação produzida pelo mesmo no terminal (ou consola).
+
+#/dev/random ou /dev/urandom
+#Estes ficheiros são geradores de números aleatórios do kernel.
+
+#/dev/zero
+#Este ficheiro serve apenas para obter múltiplos zeros. Qualquer leitura deste dispositivo devolverá 0.
+
+
+
+
+
+

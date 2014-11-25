@@ -1,0 +1,11 @@
+#!/bin/bash
+
+test "abc" = "xyz"		# ou [ "abc" = "xyz" ]
+echo $?				# 1 é falso... zero é que é verdadeiro
+
+[ "abc" = "xyz" ]		# ou test "abc" = "xyz"
+echo $?
+
+[ "abc" != "xyz" ]		# ou test "abc" != "xyz"
+echo $?
+ 

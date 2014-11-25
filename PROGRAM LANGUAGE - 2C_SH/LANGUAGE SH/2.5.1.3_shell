@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Username: "
+read x
+
+if [ $x = $USER ]; then			# ou if test $x = $USER
+	echo "Acertou."
+else
+	echo "Falhou."
+fi
+

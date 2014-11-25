@@ -1,0 +1,83 @@
+
+#3.2.1 - Formato do ficheiro
+#Um ficheiro crontab contém instruções para o programa cron. Linhas que comecem por um # são
+#ignoradas. Comentários em linhas após comandos são interpretados como fazendo parte do próprio
+#comando.
+#Uma linha no ficheiro representa ou um comando ou uma definição de ambiente. Por exemplo
+
+
+
+nome = valor
+
+
+
+#A string valor pode ser definida entre aspas para conter por exemplo espaços. No entanto não são
+#feitas substituições de variáveis ambientes, e linhas como
+
+
+
+PATH = $HOME/bin:$PATH
+
+
+
+#não funcionam como esperado. Algumas variáveis são automaticamente definidas. A shell é definida
+#como sendo /bin/sh e LOGNAME e HOME são definidos a partir do ficheiro /etc/passwd para o
+#respectivo utilizador.
+#Os comandos são executados pelo cron quando o minuto, a hora, e o mês do ano forem iguais à data
+#actual. Um comando é composto por 6 campos, sendo os primeiros 5 dedicados à data e hora e o
+#sexto ao comando a executar propriamente dito. Os campos da hora e data são (por ordem):
+
+#Campo 			Valores permitidos
+
+
+#minuto 		0-59
+#hora 			0-23
+#dia do mês 		1-31
+#mês 			1-12
+#dia da semana		 0-7
+
+#Um campo pode também ser um asterisco (*), que significa “primeiro-ultimo” valor. O campo pode
+#também ser definido como um intervalo. Um intervalo é definido como sendo dois números separados
+#por um hífen. Por exemplo “0-3” na hora, significa executar o comando às 0h, 1h, 2h e 3h.
+#Pode também especificar-se um conjunto discreto de valores, devendo estes ser definidos entre
+#aspas e separados por vírgulas. No caso dos minutos, “10,15,20” significa executar o comando aos
+#10, 15 e 20 minutos da hora, respectivamente. Nos intervalos é possível também definir o passo da
+#repetição usando o carácter /. Por exemplo, “1-9/2” é o mesmo que “1,3,5,7,9”, ou “*/2” no campo das
+#horas significa de duas em duas horas.
+#!/bin/bash
+
+
+#Exemplo de um crontab:
+# use /bin/sh to run commands, overriding the default set by cron
+SHELL=/bin/sh
+
+# mail any output to `paul', no matter whose crontab this is
+MAILTO=paul
+
+
+# run five minutes after midnight, every day
+5 0 * * 	$HOME/bin/daily.job >> $HOME/tmp/out 2>&1
+
+# run at 2:15pm on the first of every month -- output mailed to paul
+15 14 1 * * 	$HOME/bin/monthly
+
+# run at 10 pm on weekdays, annoy Joe
+0 22 * * 1-5 	mail -s "It's 10pm" joe%Joe,%%Where are your kids?%
+23 0-23/2 * * * echo "run 23 minutes after midn, 2am, 4am ..., everyday"
+5 4 * * sun	echo "run at 5 after 4 every sunday"
+
+
+
+
+#O ficheiro /etc/crontab tem uma estrutura idêntica, no entanto existe um campo adicional para o
+#utilizador, a seguir aos campos da data e hora e o comando.
+
+
+
+
+
+
+
+
+ 
+

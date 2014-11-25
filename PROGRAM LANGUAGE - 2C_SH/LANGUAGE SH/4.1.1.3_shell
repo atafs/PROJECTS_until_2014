@@ -1,0 +1,53 @@
+#!/bin/bash
+
+./eco *.sh
+
+
+
+
+##include <stdio.h>
+
+#int main( int argn, char *argv[] ) {
+#	int i;
+#	for ( i = 1; i < argn; i++ ) {
+#		printf ("%d: %s\n", i, argv[i] );
+#	}
+#}
+
+
+#4.1 ‐ Expansão	
+
+#Questão muito importante: quando fazemos um comando como o ls -l *.c ou zip programas.c *.c
+#quem é que transforma o *.c numa lista de nomes de ficheiros, a shell ou os comandos. Resposta: a
+#shell. Por exemplo, ao fazermos
+
+
+
+#ls -l *.sh
+
+
+
+#a shell vai invocar o comando ls passando-lhe como argumentos todos os nomes de ficheiro que
+#encontrar que adiram ao padrão *.c (ou seja o nome de todos os ficheiros com extensão .c que
+#encontrar, neste caos no directório corrente).
+#Podemos. em caso de dúvida, fazer um programa nosso para o demonstrar. O seguinte programa
+#escreve no ecrã os argumentos que receber da linha de comando:
+
+
+
+
+
+
+
+#Experimente, por exemplo:
+#./eco a b c
+
+
+
+
+
+
+
+
+
+

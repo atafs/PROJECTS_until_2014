@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+#É raro haver interesse em usar variáveis indexadas, isoladamente, em vez de variáveis comuns.
+#Normalmente o que se pretende é usar um conjunto de posições contíguas em processamentos
+#iterativos (ou seja, o correspondente aos arrays nas linguagens de programação clássicas);
+#Exemplo: gerar 6 números aleatórios:
+
+
+
+
+
+
+i=0
+while [ $i -le 5 ] ; do
+	num[i]=$RANDOM
+	echo "Número : $i ${num[i]}"
+		i=$(( $i + 1))
+	done
+
+
+
+
+
+
+#A variável $RANDOM fornece um número aleatório ("diferente") de cada vez que é usada; o número 15
+#gerado situa-se entre 0 e 2**15 (2 );
+

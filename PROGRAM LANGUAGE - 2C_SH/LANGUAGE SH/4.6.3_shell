@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#substituição – substituir uma parte da string
+#o exemplo seguinte substitui a letra a pela letra x na string lida;
+
+
+
+
+
+
+echo -n "String: "
+read s
+s1=${s/a/x} ; echo $s1
+s1=${s//a/y} ; echo $s1
+
+
+
+
+
+#experimente uma entrada com várias letras a para verificar a diferença entre / e //;
+

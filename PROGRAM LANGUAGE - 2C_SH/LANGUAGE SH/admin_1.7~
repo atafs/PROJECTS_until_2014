@@ -1,0 +1,59 @@
+
+#1.7‐ A directoria /proc	
+  
+#A directoria /proc contém um sistema de ficheiros virtual. Estes ficheiros não existem fisicamente no
+#disco, mas sim na memória. O conteúdo destes ficheiros serve para fornecer informação sobre o
+#sistema operativo. Alguns dos ficheiros importantes descrevem-se a seguir.
+
+#/proc/1
+#É uma directoria com informação acerca do processo número 1. Cada processo tem uma
+#subdirectoria na directoria /proc, sendo o nome o pid do processo.
+
+#/proc/cpuinfo
+#Informação sobre o processador.
+
+#/proc/devices
+#Lista dos dispositivos configurados no kernel que está de momento a correr.
+
+#/proc/dma
+#Mostra quais os canais DMA que estão a ser usados a cada momento
+
+#/proc/filesystems
+#Lista quais os sistemas operativos configurados no kernel.
+
+#/proc/interrupts
+#Mostra quais as interrupções que estão a ser usadas, e quantas interrupções de cada uma já houve.
+
+#/proc/ioports
+#Quais os portos I/O que estão a ser usados no momento.
+
+#/proc/kcore
+#Uma imagem da memória física do sistema. Tem exactamente o mesmo tamanho da memória física,
+#mas não ocupa esse valor. Note-se que qualquer ficheiro em /proc não ocupa qualquer espaço em
+#disco.
+
+#/proc/kmsg
+#Mensagens geradas pelo kernel.
+
+#/proc/loadavg
+#Contém o valor ‘Load Average’ do sistema.
+
+#/proc/meminfo
+#Informação sobre o uso memória, tanto física como da swap.
+
+#/proc/modules
+#Quais os módulos actualmente carregados pelo kernel.
+
+#/proc/net
+#Informação sobre os protocolos de rede.
+
+#/proc/stat
+#Várias estatísticas acerca do sistema, tais como o número de ‘page faults’ desde que o sistema
+#arrancou.
+
+#/proc/uptime
+#Há quanto tempo que o sistema se iniciou.
+
+#/proc/version
+#Versão do kernel.
+

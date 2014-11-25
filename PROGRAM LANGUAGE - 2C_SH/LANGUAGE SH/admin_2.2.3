@@ -1,0 +1,48 @@
+
+#2.2.3 - Criar manualmente um utilizador
+#Criar um utilizador manualmente envolve os seguintes passos:
+
+#editar o ficheiro /etc/passwd com o comando vipw e adicionar uma nova linha para
+#o utilizador. Este comando tem como vantagem bloquear o acesso ao ficheiro, de
+#forma a que outros programas tentem actualizá-lo ao mesmo tempo. O campo da
+#password deve ser inicializado com ‘*’ (asterisco) de forma a ser impossível ao
+#utilizador efectuar o login;
+
+#de forma igual, editar o ficheiro /etc/group com o comando vigr, se for necessário
+#criar um novo grupo;
+
+#criar a directoria home do utilizador com o comando mkdir;
+
+#copiar os ficheiros da directoria /etc/skel para a nova directoria home;
+
+#mudar o dono do ficheiro e as permissões usando os comandos chown e chmod; a
+#opção –R é útil para aplicar recursivamente a todos os ficheiros da directoria actual
+#e respectivas subdirectorias:
+	#cd /home/novoutilizador
+	#chown –R username.group .
+	#chmod –R go=u, go-w .
+	#chmod –R go= .
+
+#mudar a password do utilizador com o comando passwd.
+
+
+#Nota: estas operações devem ser realizadas como administrador, i.e., como root. Para tal pode usar-
+#se o comando su para passar o utilizador actual para super user. Nas distribuições mais recentes, o
+#administrador costuma não ter login, pelo que alternativamente é apenas possível invocar comandos
+#como sendo administrador, precedendo o comando a executar de sudo.
+#Por exemplo, para mudar as permissões dos ficheiros usar-se-ia o seguinte comando:
+
+
+sudo chown –R username.group .
+
+
+#Nota 2: os comandos adduser e useradd evitam os passos anteriores.
+
+
+
+
+
+
+
+
+

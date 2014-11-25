@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#Exemplo: listar ficheiros (excluindo os directórios)
+
+
+
+for i in *.sh; do
+	if [ ! -d $i ] ; then
+		ls -l $i
+	fi
+done
+

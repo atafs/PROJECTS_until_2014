@@ -1,0 +1,30 @@
+
+#3.2‐ O processo cron	
+  
+#O processo cron é um processo especial que permite executar/agendar tarefas num determinado
+#instante de tempo. Este instante pode ser definido como um intervalo regular, ou mesmo como uma
+#determinada hora de um determinado dia. Os ficheiros de configuração dos diferentes utilizadores
+#encontram-se dentro da directoria /var/spool/cron/crontabs. O seu conteúdo não deve ser alterado
+#directamente, mas sim mediante o uso do comando crontab.
+#Adicionalmente o processo cron lê o ficheiro /etc/crontab, que tem um formato diferente dos
+#anteriores. Por exemplo, inclui o campo de utilizador para permitir executar um determinado
+#comando/script com as permissões do respectivo utilizador.
+#Todos os ficheiros de configuração da subdirectoria /etc/cron.d são também lidos; embora com um
+#formato semelhante do /etc/crontab, estes não herdam por exemplo variáveis de ambiente, e o seu
+#uso é mais restrito. Da mesma forma, todos os ficheiros que se encontram nas directorias
+#/etc/cron.daily, /etc/cron.weekly e /etc/cron.monthly são lidos.
+#Uma vez ocorrida uma alteração a qualquer um dos ficheiros de configuração, não é necessário
+#executar novamente o programa cron. Na verdade, este verifica de minuto a minuto se houve alguma
+#alteração em algum ficheiro de configuração mediante a consulta do campo modtime do sistema de
+#ficheiros.
+#O administrador deverá usar o ficheiro /etc/crontab e não a subdirectoria /etc/cron.d.
+#Os utilizadores podem também definir os seus comandos/scripts. Para isso deverão ter permissão no
+#ficheiro /etc/cron.allow ou não estar listados no ficheiro /etc/cron.deny. Se estes ficheiros não
+#existirem, dependendo da configuração do sistema, apenas o administrador (root) poderá usar este
+#comando.
+#Para mostrar o crontab do utilizador deverá usar-se o comando:
+
+
+
+crontab –l
+

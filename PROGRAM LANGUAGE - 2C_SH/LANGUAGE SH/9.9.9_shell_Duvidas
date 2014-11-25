@@ -1,0 +1,14 @@
+Dúvidas:
+
+??? 2.5.2.2_shell não funciona... relacionado com if
+
+??? 2.5.4.1_shell... i= "a b c"... i= a b c ... i= 'a b c'... i= ´a b c´... diferenças entre eles...
+
+??? 3.1.1_shell... o script gera números??? o comando expr ao ser executado pela bash, é como um comando a executar outro?
+
+??? 3.1.2_shell... sobre o comando expr... não percebo
+
+??? comando grep... usá-lo em ficheiros, etc...
+
+??? 3.5.1_shell.. comando sed... não consigo modificar o ficheiro para fazer outras coisas...
+??? 3.5.2... explicação sobre esta lista de símbolos para sed

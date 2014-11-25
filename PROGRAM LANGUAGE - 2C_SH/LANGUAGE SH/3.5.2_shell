@@ -1,0 +1,55 @@
+#!/bin/bash
+
+#A opção -n faz com que o sed reproduza apenas as linhas em que isso é pedido explicitamente;
+#neste caso aparecem apenas as linhas seleccionadas pelo comando que tem a forma:
+
+#/expressão-regular/p
+
+#o efeito deste comando é escrever (o "p" é de print) as linhas que aderem à expressão-regular
+#indicada; neste caso aderem à expressão regular as linhas contendo a palavra indicada;
+#Numa expressão-regular podem-se usar símbolos com significado especiais que permitem bastante
+#flexibilidade na localização de sequências de texto; essa simbologia resume-se na seguinte tabela:
+#	* Qualquer sequência de caracteres;
+#	? - Um caracter qualquer
+#	^ - Início da linha
+#	$ - Fim da linha
+#	[ ] - um dos caracteres indicados;
+#	\x - escape de um caractere especial; ex \$ para representar o caractere $
+
+#Listar apenas as directorias
+ls -l | sed -n '/^d/p'
+
+#Listar os ficheiros executáveis
+ls -l | sed -n '/^??x??x??x/p'
+
+
+#Os [ ] denotam um caractere, dentro dos indicados na lista; Por exemplo [abc] denota um caractere,
+#que seja a ou b ou c;
+#Na lista podem figurar intervalos; ex: [a-z] denota uma letra minúscula e [a-zA-Z] uma letra qualquer;
+
+#O símbolo ^ antes da lista denota todos os caracteres menos os indicados;
+
+#ex: [^abc] qualquer caractere que não seja o a ou b ou c;
+#ex: [^a-b] qualquer caractere que não seja uma letra minúscula;
+
+#Exemplos:
+#	^a		localiza as linhas começadas por a (ie: contendo a sequência "início da linha a");
+#	a$		as linhas terminada em a (ie: contendo a sequência "a fim de linha");
+#	[abc]		um a ou um b ou um c;
+#	^[0-9]		Começadas por algarismo;
+#	^?$		contendo apenas um caracter;
+#	^[a-zA-Z]$	linha contendo apenas uma letra;
+#	*Maria*		a palavra Maria
+# 	[Mm]aria	a palavra Maria ou a palavra maria
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
+
+Aula prática 3 horas:
+
+Não é uma linguagem de programação, mas simula bem isso...
+
+Vamos dar uma parte importante para resolver o trabalho...
+
+Script é um agrupamento de comandos, que pode ser colocado na linha de comandos, ou num ficheiro.
+
+
+>x="iscte"   		# x="yyy" sem espaços... é implacável
+>echo $x (dollar)
+
+
+>echo $x-iul		#também funciona
+
+>echo "$x-iul"		#aspas e película é totalmente diferente
+
+>echo "${x}123"		# espaços parece que é o comando e o argumento...
+	
+>$((...))			# faz as contas
+
+>res=$(ls -l)
+
+>res=´ls -l´		# faz igual a ()... executa o que está dentro
+
+>echo			# torna tudo numa string... lê
+
+escrever uma string é um dos comandos mais básicos...
+
+>$HOME			# são variáveis de ambiente...
+
+
+if testa um comando
+
+if comando
+then...
+else
+....
+fi ..			# é o if ao contrário
+
+for... acaba em done
+case... acaba em esac
+
+
+if $5==10 		# vai executar if 5 == 10
+
+return code ou exit code... >test... >echo $?
+
+lt # menor que...
+
+argumentos especiais... $1 $2
+
+test ..... é igual a [   ...  ]
+
+
+man test ... tudo o que podemos usar com test... todos os comandos: ex -ge -lt -z 
+
+> e >>
+
+
+>if [ $x -ge $y ] && [ $y -ge $w ]; then	# && os dois têm de funcionar; || mesmo que um não funcione, o outro funciona...
+	echo "Funciona"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

@@ -1,0 +1,38 @@
+
+#3.2.2 - Definir um crontab para um utilizador
+#Para definir um crontab para um determinado utilizador, deve primeiro criar-se um ficheiro com os
+#comandos para o cron. Considere o ficheiro cron.txt que contém o seguinde:
+
+
+* * * * * date >> $HOME/ficheiro.txt
+
+
+#De seguida deverá executar-se o comando:
+
+
+
+crontab cron.txt
+
+
+#Para verificar que o comando foi bem sucedido pode verificar-se com
+
+
+
+crontab –l
+
+
+
+#O exemplo anterior executa o comando date >> $HOME/ficheiro.txt. De minuto a minuto, uma linha é
+#acrescentada ao ficheiro com a data e a hora a que o comando foi executado.
+#Para apagar o crontab anterior pode usar-se o comando:
+
+
+
+
+crontab –r
+
+
+
+
+
+

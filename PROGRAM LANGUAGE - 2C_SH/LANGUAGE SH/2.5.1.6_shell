@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+echo -n "Nome: "; read x
+if [ -z "$x" ]; then
+	echo "(vazio)"
+elif [ $x = $USER ]; then
+	echo "Acertou"
+else
+	echo "Falhou."
+fi
+
+
+
+#O exemplo anterior usa dois ifs encadeados.
+#Em alternativa pode ser usada a sintaxe if-elif-else-fi ilustrada no seguinte exemplo:
+

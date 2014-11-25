@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#Os elementos && e || permitem fazer o encadeamento de comandos numa lógica parecida com a dos
+#operadores homólogos da linguagem C;
+#A sequência:
+
+
+
+
+
+#comando1 && comando2 && ...
+
+
+
+
+
+#executa os comandos por ordem enquanto derem "sucessso" ( ou seja, termina a sequência se um
+#deles falhar)
+#A sequência:
+
+
+
+
+
+#comando1 || comando2 || ....
+
+
+
+
+
+
+#executa os comandos por ordem até um deles ter sucesso (ou seja, executa os comandos por ordem
+#enquanto falharem);
+#exemplo
+
+
+
+
+
+trivial 0 && echo "Ok."
+trivial 1 && echo "NOP"
+trivial 0 || echo "NOP"
+trivial 1 || echo "Ok."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

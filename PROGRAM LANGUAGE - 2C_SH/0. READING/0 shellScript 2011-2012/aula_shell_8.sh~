@@ -1,0 +1,14 @@
+#!/bin/bash
+#vai mandar para o bash interpretar... podia interpretar com piten, etc...
+
+
+for i in "maria" 1 2 3 $1 *.sh; do		# é um ciclo, mas serve para percorrer elementos de uma lista
+	echo "elemento: $i"			# *.c   expande mostrando todos os ficheiros que terminam assim...
+	if [ -x $i ]; then			# i é a variável
+		echo "Este tem permissão!!"
+	else 
+		echo "Não tem permissão"	
+	fi
+
+done
+echo "Adeus $USER"

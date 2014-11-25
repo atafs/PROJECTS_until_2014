@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#4.3 ‐ exit; encadeamento de comandos;	
+  
+#Interactivamente o comando exit serve para terminar uma shell; ex:
+
+
+
+
+#/bin/bash		# inicia nova shell
+#exit			# termina (volta à shell inicial)
+
+
+
+
+#num script tem o efeito correspondente, ie, termina a execução do próprio script; ex:
+#O exit pode ser utilizado para terminar um script, prematuramente, em condições anormais.
+#!/bin/bash
+
+
+
+
+date
+exit			# o script termina aqui
+echo "Bye."		# este comando não chega a ser executado
+
+
+
+
+
+
+
+

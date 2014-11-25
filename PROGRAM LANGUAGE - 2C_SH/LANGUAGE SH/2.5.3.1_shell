@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#2.5.3 - Case
+#A instrução case permite escolher um de vários blocos de comandos alternativos, o sua forma geral é a seguinte:
+
+#case $variavel in
+#caso1)
+#	lista-comandos1;;
+#caso2)
+#	lista-comandos2;;
+#...
+#esac
+
+#No exemplo anterior as opções são valores unívocos. De uma forma geral, as opções podem ser um
+#padrão; nesse caso, é seleccionada a primeira opção que adira à string de controlo (indicada na linha
+#case...in).
+
+echo "Insira um clube de futebol: "; read x
+
+case $x in
+	benfica) echo "Lisboa";;
+	sporting) echo "Lisboa";;
+	porto) echo "Porto";;
+	boavista) echo "Porto";;
+	*) echo "Desconheço";;
+	esac
+

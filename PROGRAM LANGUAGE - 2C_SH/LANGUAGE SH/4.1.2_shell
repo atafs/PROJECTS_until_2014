@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+#MAIS AVANÇADO
+#Muitas vezes é preciso impedir a shell de seguir o procedimento normal de expansão de caracteres.
+#Por exemplo, para escrever um $ no ecrã é preciso indicar à shell para não interpretar o $ como
+#iniciador do nome de uma variável. Diz-se então que estamos a fazer o escape (do significado
+#habitual) do caracter.
+#Uma das maneiras de escapar uma sequência é inseri-la entre ' '. Por exemplo:
+
+
+
+
+x=bifa
+echo $x			# o $X é expandido
+echo '$x'		# os ' ' impedem a expansão
+
+
+
+
+#O mecanismo de expansão deriva da presença de caracteres com significado especial para a shell.
+#No caso anterior o significado especial é dado pelo $. As ' ' retiram o significado especial ao $ e por
+#isso $x fica a ser só, apenas e literalmente $x.
+#(Em rigor, as ' ' são necessárias apenas para lidar com o $. Ou seja, poderíamos obter o efeito
+#desejado apenas com echo '$'x. Mas '$x' também funciona e é muito mais claro.)
+
+#(São também caracteres especiais da shell os seguintes:
+
+# * ? [ ] ' " \ $ ; & ( ) | ^ < > { }
+#que normalmente, para serem assumidos de forma literal, devem também ser escapados).
+

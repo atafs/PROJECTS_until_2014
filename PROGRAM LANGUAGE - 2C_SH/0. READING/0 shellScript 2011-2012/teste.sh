@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+echo "Digite o diretorio onde deseja buscar"
+read DIR
+echo "Digite o nome do arquivo"
+read ARQUIVO
+find $DIR -name '$ARQUIVO'
+echo ""
+echo "Busca efetuada com Sucesso!!!"
+
+
+
+
+

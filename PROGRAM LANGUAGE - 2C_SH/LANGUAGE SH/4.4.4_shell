@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#Exemplo: no seguinte script é feita uma função readline que lê uma string:
+
+
+
+
+
+readline () {
+	echo "readline..."
+	msg=""
+	if [ $# -gt 0 ] ; then
+		msg="$*: "
+	fi
+
+	str=""
+	while [ -z $str ] ; do
+		echo -n $msg
+		read str
+	done
+	STR=str
+}
+
+
+readline "Teste"
+echo "Lido: " $STR
+

@@ -1,0 +1,91 @@
+#!/bin/bash
+echo ""
+echo ""
+echo "######################################################################"
+echo "#                                                                    #"
+echo "#       Script - by Américo Tomás - 54149 - versão 1.0               #"
+echo "#                                                                    #"
+echo "######################################################################"
+echo ""
+echo ""
+echo "Parte I:"
+echo ""
+echo "1. O número de linhas do ficheiro é: "
+cat aula11.log | wc -l
+echo ""
+
+echo "2. As duas últimas linhas do ficheiro são: "
+cat aula11.log | tail -2
+echo ""
+
+echo "3. As linhas relativas a alunos com números começados por 5 são: "
+cat aula11.log | cut -d ' ' -f1 | grep 5....
+echo ""
+
+echo "4. o Nome de cada uma das pessoas é: "
+cat aula11.log | cut -d ' ' -f2
+echo""
+
+echo "5. O número e nome da cada uma das pessoas são: "
+cat aula11.log | cut .-d ' ' -f1,2
+echo ""
+
+echo "6. o nome dos estudantes é: "
+cat aula11.log | grep estudante | cut -d ' ' -f2
+echo ""
+
+echo "7. O nome dos estudantes do porto são: "
+cat aula11.log | grep estudante | grep porto
+echo ""
+
+echo "8. O nome dos estudantes ordenados por ordem alfabética são: "
+cat aula11.log | grep estudante | cut -d ' ' -f2 | sort
+echo ""
+
+echo "9. A lista de equipas, ordenada e sem repetições são: "
+cat aula11.log | cut -d ' ' -f3 | sort | uniq
+echo ""
+
+echo "10. O número de equipas diferentes são: "
+cat aula11.log | cut -d ' ' -f3 | sort | uniq | wc -l
+echo ""
+
+echo "11. Para alterar o letra de rui para lera maiúsculo é: "
+cat aula11.log | sed 's/rui/Rui/' > aula11.1.log
+echo ""
+
+echo "12. O Nome e Numero das contas são: "
+cat aula11.log | awk '{printf $2 $4}' > aula11.2.log  
+echo ""
+
+echo "12. O Nome e Numero das contas (3º elemento do NIB) são: "
+cat aula11.log | cut -d ' ' -f2,4 > aula11.3.log  # falta cortar os dados sem o número da conta
+echo ""
+
+echo "12. O Nome e Numero das contas (3º elemento do NIB) são: "
+cat aula11.log | awk '{print $6 $2}' | sort -n > aula11.3.log   # falta o sed e cut e variável
+echo ""
+
+echo "12. O Nome e Numero das contas (3º elemento do NIB) são: "
+cat aula11.log | sed 's/ [0-9\-]* / /' > aula11.5.log  # falta cortar os dados sem o número da conta
+echo ""
+
+echo "12. O Nome e Numero das contas (3º elemento do NIB) são: "
+cat aula11.log | sed 's/-/ /g' > aula11.5.log  
+echo ""
+
+echo "13. o Maior saldo é: "
+cat aula11.log | grep $x(awk '{if $2 > $1; $x=$2}') # está estranho... 
+echo "" 
+
+echo "14. O Nome de quem tem maior saldo é: "
+cat aula11.log | grep $x | cut -d ' ' -f2
+echo "" 
+
+
+#Parte II:
+
+
+
+
+

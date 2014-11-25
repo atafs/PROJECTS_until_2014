@@ -1,0 +1,45 @@
+#!/bin/bash
+
+#É possível associar um bloco de comandos a diferentes condições de selecção. Por exemplo:
+
+
+ls -l | awk '
+	/^d/ { print $1 $3; }
+	/^-/ { print ficheiro $2; }'
+
+
+
+#Trata de forma diferente directórios e ficheiros comuns;
+#É ainda possível associar um bloco de comandos a uma situação especial, denotada pela marca
+#BEGIN que ocorre antes da leitura de entrada; isto é útil para fixar alguns parâmetros importantes
+#como o FS que indica o caracter de separação dos campos:
+#Exemplo:
+
+
+
+cat /etc/passwd | awk 'BEGIN { FS=":" ; } { print $1 $5; }'
+
+
+
+
+#Mostra o nome e descrição de cada utilizador (colunas 1 e 5 do ficheiro /etc/passwd);
+#Exemplo:
+
+#Considere o ficheiro users.txt com o seguinte conteúdo.
+#josesilva:sporting:1212-1212-121212
+#cebola:x:2333-2222-2323223
+#tintim:stromp:2323-2323-2323232
+#jaquim:ola:2232-1111-11111111
+#pedro:benfica:3333-3333-3333333
+
+#O comando seguinte extrai apenas a coluna 2:
+
+
+
+cat users.txt| awk -F':' '{print $2}'
+
+
+
+
+
+

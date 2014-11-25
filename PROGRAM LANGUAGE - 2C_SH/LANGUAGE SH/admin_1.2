@@ -1,0 +1,65 @@
+
+#1.2 ‐ A	directoria raiz (root)	
+  
+#A raiz do sistema de ficheiros contém várias outras directorias, comuns aos vários sistemas Unix-like,
+#que agrupam os diferentes tipos de ficheiros, de acordo com a sua semântica:
+
+#/bin
+#Comandos necessários durante o processo de arranque do sistema operativo, que também
+#possam ser usados pelos utilizadores (provavelmente após o processo de arranque).
+
+#/sbin
+#Comandos que não se destinam aos utilizadores normais, mas sim ao utilizador root.
+#Usualmente esta directoria não se encontra na PATH dos utilizadores normais. Como exemplo
+#de comandos guardados nesta directoria temos:
+	#ifconfig – configura as interfaces de rede;
+	#modprobe – carrega módulos no kernel do sistema operativo;
+	#init – será explicado mais à frente.
+
+#/etc
+#Nesta directoria são guardados os ficheiros de configuração específicos da máquina onde o
+#sistema operativo se encontra instalado.
+
+#/root
+#A directoria home do utilizador root.
+
+#/lib
+#Directoria onde estão guardadas as bibliotecas partilhadas (shared libraries) necessárias à
+#execução dos programas.
+
+#/dev
+#Os ficheiros guardados nesta directoria servem como interface com diferentes dispositivos,
+#por exemplo, teclado, discos rígidos, placas de rede etc... Não são ficheiros editáveis.
+
+#/tmp
+#Nesta directoria todos os utilizadores podem ler e/ou escrever. Esta serve para os diferentes
+#programas escreverem em disco informação temporária. Nos sistemas Linux, normalmente os
+#utilizadores têm um limite de espaço em disco para a directoria pessoal. A /tmp normalmente
+#é limitada ao espaço da raiz /.
+
+#/boot
+#Nesta directoria guardam-se os ficheiros usados pelo bootstrap loader, por exemplo, LILO ou
+#GRUB. As imagens do kernel são normalmente guardadas aqui. Esta directoria é
+#normalmente guardada numa partição início do disco, ou eventualmente guardada
+#separadamente noutro sistema de ficheiros.
+
+#/mnt , /media, /Volumes
+#Estas directorias servem para montar (mount) temporariamente dispositivos de
+#armazenamento. Tipicamente, quando se liga uma pen ou se introduz um CDROM, é criada
+#uma sub directoria para cada dispositivo. Esta tarefa pode ser feita automaticamente pelo
+#sistema operativo, ou pelo administrador (root).
+
+#/proc, /usr, /var, /home
+#Estas directorias servem como pontos onde podem ser montados outros sistemas de ficheiros
+#importantes (que veremos a seguir). A directoria /proc é um caso particular de uma directoria
+#que não reside em nenhum disco.
+
+
+
+
+
+
+
+
+
+

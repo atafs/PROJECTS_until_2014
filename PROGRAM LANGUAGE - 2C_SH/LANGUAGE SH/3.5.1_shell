@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#3.5 ‐ sed	
+  
+#Alguns comandos do Unix são especialmente importantes quando se trata de scripts; Um desses
+#comandos é o sed, que introduz também a noção de expressões regulares;
+#Essencialmente, o sed lê uma entrada e produz uma saída transformada;
+#A transformação a fazer é indicada num comando dado como argumento sed;
+#Há duas transformações importantes:
+#- Seleccionar parte das linhas do ficheiro original;
+#- Substituir parte do texto do ficheiro original;
+
+
+#o seguinte comando selecciona as linhas do ficheiro /etc/passwd que contêm a palavra root;
+
+
+
+sed -n '/root/p' /etc/passwd
+

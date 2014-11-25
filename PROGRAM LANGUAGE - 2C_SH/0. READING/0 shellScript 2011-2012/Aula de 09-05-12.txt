@@ -1,0 +1,11 @@
+comando tail...
+
+comando head...
+
+comando cut...
+
+linha de comando> aula11.txt | tail -2 | awk -F'[ -]' '{print $2, &6}'
+
+cygwin ... para windows, posso escolher coisas que digam bash, comando básicos do unix... posso trabalhar em windows como se estivesse na bash.
+(não dá para correr tudo... como por exemplo fork, etc... coisas que precisem dos sistemas básicos do Linux)
+

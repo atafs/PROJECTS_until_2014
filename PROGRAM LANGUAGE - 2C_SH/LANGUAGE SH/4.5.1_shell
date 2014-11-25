@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+#4.5 ‐ Arrays	
+  
+#Nos scripts podem-se usar variáveis indexadas; ex:
+#note a utilização da sintaxe ${} para isolar o nome das variáveis;
+
+
+
+
+
+
+a[0]="Hello"
+a[3]="World"
+echo "${a[0]} ${a[3]}"
+
+

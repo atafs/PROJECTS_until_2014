@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+main() {
+
+	printf ("\nHello World of Operating Systems\n\n");
+}

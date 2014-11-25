@@ -1,0 +1,44 @@
+
+#1.6‐ A directoria /var	
+  
+#A directoria /var contém ficheiros cuja informação é alterada durante a execução do sistema
+#operativo. Esta directoria é específica para cada sistema.
+
+#/var/cache/man
+#Uma cache para as man pages. Funciona como uma memória temporária.
+
+#/var/lib
+#Ficheiros que mudam durante a execução do sistema operativo.
+
+#/var/local
+#Local onde os programas situados em /usr/local (i.e., programas instalados pelo administrador),
+#podem escrever temporariamente.
+
+#/var/lock
+#Lock files. Estes ficheiros costumam indicar que um ficheiro está a usar um determinado dispositivo
+#ou aceder a um determinado ficheio. Funciona como uma espécie de flag: um programa que tente
+#aceder a um dispositivo, consulta primeiro esta directoria para verificar se existe um ficheiro de lock, e
+#caso exista, não acede ao dispositivo ou ficheiro em questão.
+
+#/var/log
+#Esta directoria contém a maior parte dos logs do sistema operativo. Especiamente importantes são os
+#ficheiros /var/log/wtmp criado pelo login, e o ficheiro /var/log/messages mantido pelo programa syslog,
+#que guarda todas as mensagens do kernel ou programas de sistema.
+
+#/var/mail
+#Nesta directoria é guardado todo o email para os diferentes utilizadores. Alternativamente pode ser
+#usada da directoria /var/spool/mail
+
+#/var/spool
+#Directoria onde são armazenados ficheiros de notícias (news), filas de impressora (queues), e outros
+#tipos de filas de espera.
+
+#/var/run
+#Contém informação acerca do sistema operativo apenas válida até a próxima vez que o sistema é
+#reiniciado.
+
+#/var/tmp
+#Directoria usada para os programas escreverem temporariamente. Usualmente é usada quando os
+#ficheiros têm uma dimensão maior ou quer-se que durem mais tempo que os armazenados na
+#directoria /tmp.
+

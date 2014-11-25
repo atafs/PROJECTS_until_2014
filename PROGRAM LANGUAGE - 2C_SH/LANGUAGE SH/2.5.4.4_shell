@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Como vimos anteriormente, as variáveis especiais $1, $2, ... representam os argumentos do
+#comando. Estas variáveis são adequadas para aceder aos argumentos um a um. Para aceder aos
+#argumentos num ciclo são úteis as seguintes outras variáveis especiais:
+#$* - todos os argumentos
+#$# - o número de argumentos
+
+
+
+echo "foram dados $# argumentos, que são: "
+for a in $* ; do
+	echo "-> $a"
+done
+

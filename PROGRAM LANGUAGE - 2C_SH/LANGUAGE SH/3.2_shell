@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#3.2 ­‐ grep	
+  
+#O comando grep permite procurar uma string num ficheiro. Na forma normal o comando mostra as
+#linhas do ficheiro que contêm esse padrão.
+#Com a opção -c mostra o número de linhas nas
+#mesmas condições;
+
+# Mais Exercícios:
+# Faça um script que indique o número de ficheiros .c , .h existentes no directório;
+# Faça um script que receba um argumento e indique cada um dos ficheiros .c onde o argumento
+# aparece e quantas vezes;
+# Faça um script que indique os ficheiros .h pendurados (não incluídos em qualquer ficheiro .c ou .h);
+# Faça um script que indique, para cada ficheiro .h, a lista dos ficheiros (.h ou .c) onde é incluído;
+
+
+
+grep $USER /etc/passwd
+grep -c $USER /etc/passwd
+

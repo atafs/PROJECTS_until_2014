@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#substring – extrair parte de uma string;
+#o exemplo seguinte lê uma string e mostra parte dos caracteres lidos:
+
+
+
+
+
+
+echo -n "String: "
+read s
+echo ${s:5}
+echo ${s:5:3}
+n=${#s}
+if [ $(( n % 2 )) -eq 1 ] ; then
+	m=$(( n / 2 ))
+	echo ${s:$m:1}
+fi
+
+
+
+
+
+
+#Exercício: altere para mostrar também:
+#- o último caractere
+#- a primeira metade da string;
+

@@ -1,0 +1,13 @@
+#
+
+
+
+export y=ABC
+/bin/bash
+echo $y
+y=123
+echo $y
+exit
+echo $y
+
+

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#3.4 ‐ wc	
+  
+#O comando wc dá indicações sobre a dimensão de um ficheiro: tipicamente o número de linhas,
+#palavras e caracteres; a opção -l dá apenas o número de linhas;
+
+#Mais exercícios:
+#faça um script que indique o número de linhas de código do projecto (número total de linhas nos
+#ficheiros .h e .c);
+
+
+
+#exemplo:
+
+cat /etc/passwd | wc
+cat /etc/passwd | wc -l
+
+
+
+

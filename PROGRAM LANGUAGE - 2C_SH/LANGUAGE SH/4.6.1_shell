@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#4.6 ‐ Strings	
+  
+#length – obter o comprimento, ie o número de caracteres, de uma string;
+#O exemplo seguinte mostra o tamanho de uma string lida
+
+
+
+
+
+
+echo -n "String: "
+read s
+echo ${#s}
+

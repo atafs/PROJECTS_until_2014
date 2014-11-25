@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo -n "Nome: "; read x
+if [ -z "$x" ]; then
+	echo "(vazio)"
+else
+	if [ $x = $USER ]; then
+		echo "Acertou."
+	else
+		echo "Falhou."
+	fi
+fi
+
+
+
+
+#As operações -z e -n permitem verificar, respectivamente, se uma string é vazia (tamanho 0) ou é não
+#vazia (tamanho > 0)
+

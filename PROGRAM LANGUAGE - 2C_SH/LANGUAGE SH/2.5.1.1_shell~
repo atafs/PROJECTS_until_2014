@@ -1,0 +1,11 @@
+
+#
+
+
+if pwd
+then
+	echo "o pwd funciona"
+else
+	echo "dificilmente alguém verá isto"
+fi
+

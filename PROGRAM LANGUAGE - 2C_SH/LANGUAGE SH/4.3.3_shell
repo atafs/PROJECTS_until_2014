@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#Exemplo: considere o seguinte script com o nome trivial
+
+
+
+
+
+
+exit $1
+
+
+
+
+
+#verifique o efeito da seguinte sequência:
+
+
+
+
+
+trivial 2
+echo $?								# dá ?
+if [ trivial 0 ] ; then ; echo "funciona."; fi
+
+
+
+
+
+
+#O símbolo $? representa o exit status do último comando a ser executado
+
