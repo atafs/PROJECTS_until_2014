@@ -4,7 +4,7 @@ Good Evening:
 
 This repository is divided into Themes. More specifically Programming languages.
 
-  = JAVA: is divide by a super and todosProjectos. Using mainly Eclipse, but also Netbeans and text Editors (Notepad++, Sublime)     
+  = JAVA: divided by a super and todosProjectos. Using mainly Eclipse, but also Netbeans and text Editors (Notepad++, Sublime)     
       
       - In the super there are all the mini projects, exercises, projects that I have done. With all the projects exported as JAR files and Libraries created. Leaving only access to the Main. 
       - In the todosProjectos there is all the source code, without being packaged in JAR files and Libraries.
