@@ -31,7 +31,7 @@ This repository is divided into Themes. More specifically Programming languages.
       - Android (made in a workshop a simple project of how to create an app and change color, add folders, put buttons. Use the fragments in general);
       - Matlab scripts used for studing formulas and graphics, as well anti-derivatives, series, differencials.
       - Excel also of extreme use in general (also has projects of how I have used them in Labs)
-      - LaTeX: nice text editor. Great presentation. Some code needs to be writen will writing the ideias and concepts.
+      - LaTeX: nice text editor. Great presentation. Some code needs to be written will writing ideias and concepts.
       - Git and Github: great tool. To work in teams that are not necessarily in the same place.
   
 ========================================================================================================================
