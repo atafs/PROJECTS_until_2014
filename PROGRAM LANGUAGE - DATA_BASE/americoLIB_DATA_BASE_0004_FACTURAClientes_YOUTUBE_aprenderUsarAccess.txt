@@ -1,0 +1,37 @@
+VISTOS ---------------------------------------------------------------------------------------
+
+1- Microsoft Access 2007 - Aula 01
+https://www.youtube.com/watch?v=YnAQxFxNCCU
+
+2- Microsoft Access 2007 - Aula 02 - Prática
+https://www.youtube.com/watch?v=X4xxp-3hH0Y
+
+3- Microsoft Access 2007 - Aula 03 - Prática
+https://www.youtube.com/watch?v=Mlv9X6Wgm1g
+
+4- Microsoft Access 2007 - Aula 04 - Prática
+https://www.youtube.com/watch?v=P8PCVwuz-j4&list=PL15-YRBu46IvB2hGtM25OgB20OMAVloFv&index=1
+
+5- Crear base datos Access con tablas relacionadas facturas, detalle, clientes
+https://www.youtube.com/watch?v=W4ETER31RjU&index=3&list=PL15-YRBu46IvB2hGtM25OgB20OMAVloFv
+
+----------------------------------------------------------------------------------------------
+
+//... a ver
+
+FACTURA EN ACCESS
+https://www.youtube.com/watch?v=fE3MRxNPdJc
+
+Factura en Access 2010
+https://www.youtube.com/watch?v=TBwpBr5pIFo
+
+Create a Calculated Field
+https://www.youtube.com/watch?v=7Fsx9k2AHws
+
+Generating a receipt in Microsoft Access
+https://www.youtube.com/watch?v=g_se1Ne2ofg
+
+
+
+
+
