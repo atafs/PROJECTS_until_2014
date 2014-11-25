@@ -23,7 +23,7 @@ This repository is divided into Themes. More specifically Programming languages.
       - LaTeX: nice text editor. Great presentation. Some code needs to be writen will writing the ideias and concepts.
       - Git and Github: great tool. To work in teams that are not necessarily in the same place.
       
-    = DATA_BASE: also projects and mini projects related with the creation of data bases. Using PowerDesign, Interprise            Arquitectura(EA), Sybase Central, Office Access. 
+  = DATA_BASE: also projects and mini projects related with the creation of data bases. Using PowerDesign, Interprise            Arquitectura(EA), Sybase Central, Office Access. 
       - Diagrams: knowledge about several types of diagrames (classes, use cases, sequencial, states,...)
       - SQL: knowledge about SELECT, WHERE, FROM, ORDER BY, SubQueries, Triggers. Still in progress further expension of this         subject.
       
