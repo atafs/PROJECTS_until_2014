@@ -20,7 +20,7 @@ This repository is divided into Themes. More specifically Programming languages.
   
   = PERL: tha same in this language
   
-  = WebLanguages: also interested in knowing more about Javascript, PHP, HTML, CSS, J2EE. It´s a folder to be extended in               knowledge.
+  = WebLanguages: also interested in knowing more about Javascript, PHP, HTML, CSS, J2EE. It´s a folder to be extended.
   
   = Aditional scripts from: 
       - Assembly (project that a had 20), 
