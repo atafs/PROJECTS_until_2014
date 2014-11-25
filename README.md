@@ -14,9 +14,9 @@ This repository is divided into Themes. More specifically Programming languages.
       - Diagrams: knowledge about several types of diagrames (classes, use cases, sequencial, states,...)
       - SQL: knowledge about SELECT, WHERE, FROM, ORDER BY, SubQueries, Triggers. Still in progress further expension of this subject.
       
-  = C and SH: also in those folders there is the study I made in these langagues. 
+  = C and SH: in those folders there is the study I made in these langagues. 
   
-  = RUBY: there is the beginning os the study of it. Basic Knoledge of it´s structure.
+  = RUBY: there is the beginning of the study of it. Basic Knoledge of it´s structure.
   
   = PERL: tha same in this language
   
