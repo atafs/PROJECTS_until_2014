@@ -16,7 +16,7 @@ This repository is divided into Themes. More specifically Programming languages.
       
   = C and SH: in those folders there is the study I made in these langagues. 
   
-  = RUBY: there is the beginning of the study of it. Basic Knoledge of it´s structure.
+  = RUBY: there is the beginning of the study of it. Basic Knowledge of it´s structure. Interested in expanding to Ruby on Rails.
   
   = PERL: tha same in this language
   
