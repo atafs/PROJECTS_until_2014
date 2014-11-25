@@ -1,0 +1,12 @@
+//script to upload files to github (command lines)
+
+//check that everything is working
+git init
+git status
+git remote add origin https://github.com/atafs/LINGUAGEM-Git.git
+
+//add to the bucket, commit and push
+git add -u
+git commit -m "upload all files"
+git push -u origin master
+
