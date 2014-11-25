@@ -14,7 +14,10 @@ This repository is divided into Themes. More specifically Programming languages.
       - Diagrams: knowledge about several types of diagrames (classes, use cases, sequencial, states,...)
       - SQL: knowledge about SELECT, WHERE, FROM, ORDER BY, SubQueries, Triggers. Still in progress further expension of this subject.
       
-  = C and SH: in those folders there is the study I made in these langagues. 
+  = C and SH: very interested in Linux OS. Specially Debian based linux (caixa magica, ubuntu, for now).
+  
+      - C: understanding of it´s strucuture and syntaxe.
+      - SH: also very usefull when administrating Linux machines. 
   
   = RUBY: there is the beginning of the study of it. Basic Knowledge of it´s structure. Interested in expanding to Ruby on Rails.
   
