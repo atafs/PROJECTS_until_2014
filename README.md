@@ -25,6 +25,7 @@ This repository is divided into Themes. More specifically Programming languages.
       - Git and Github: great tool. To work in teams that are not necessarily in the same place.
       
   = DATA_BASE: also projects and mini projects related with the creation of data bases. Using PowerDesign, Enterprise Arquitectura(EA), Sybase Central, Office Access. 
+      
       - Diagrams: knowledge about several types of diagrames (classes, use cases, sequencial, states,...)
       - SQL: knowledge about SELECT, WHERE, FROM, ORDER BY, SubQueries, Triggers. Still in progress further expension of this         subject.
       
