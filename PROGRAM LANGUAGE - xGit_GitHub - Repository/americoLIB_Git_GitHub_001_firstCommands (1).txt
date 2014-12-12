@@ -10,3 +10,6 @@ git add -u
 git commit -m "upload all files"
 git push -u origin master
 
+//Others
+git push -f origin master
+git add -u "name_of_it"
