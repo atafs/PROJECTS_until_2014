@@ -1,0 +1,7 @@
+package pt.iscte.poo.instalacao.aparelhos;
+
+public abstract class AparelhoPotenciaVariavel extends Aparelho{
+	
+	
+
+}

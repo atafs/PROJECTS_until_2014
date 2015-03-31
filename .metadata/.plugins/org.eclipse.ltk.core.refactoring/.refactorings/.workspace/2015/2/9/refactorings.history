@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;TF POO 2015 Pack V1.0&apos; to &apos;LinguagemJAVA_SE_2POO_projectSIMConsumoElectrico_Pack V1.0&apos;&#x0D;&#x0A;- Original element: &apos;TF POO 2015 Pack V1.0&apos;&#x0D;&#x0A;- Renamed element: &apos;TF POO 2015 Pack V1.0&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;TF POO 2015 Pack V1.0&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=TF POO 2015 Pack V1.0" name="LinguagemJAVA_SE_2POO_projectSIMConsumoElectrico_Pack V1.0" references="true" stamp="1425100569954" version="1.0"/>
+</session>

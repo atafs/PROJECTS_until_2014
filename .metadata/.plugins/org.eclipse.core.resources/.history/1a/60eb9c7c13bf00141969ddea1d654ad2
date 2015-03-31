@@ -1,0 +1,13 @@
+package pt.iscte.poo.instalacao;
+
+public class Relogio {
+	
+	public static void getInstanciaUnica() {
+		
+	}
+	
+	public static void tique() {
+		
+	}
+
+}

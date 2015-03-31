@@ -1,0 +1,11 @@
+# Exemplo de utilizacao
+
+# compilar
+asm exemplo1.asm exemplo1.hex
+
+# simular
+macx exemplo1.hex
+
+# ou
+make exemplo1
+

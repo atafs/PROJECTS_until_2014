@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.iscte.poo.instalacao.Instalacao"/>
+<fullyQualifiedTypeName name="com.iscte.poo.instalacao.aparelhos.Lampada"/>
+<fullyQualifiedTypeName name="com.iscte.poo.instalacao.Relogio"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.Relogio"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.Instalacao"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.aparelhos.Lampada"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.aparelhos.Torradeira"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.aparelhos.MicroOndas"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.aparelhos.AparelhoPotenciaFixa"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.aparelhos.AparelhoPotenciaVariavel"/>
+<fullyQualifiedTypeName name="pt.iscte.poo.instalacao.aparelhos.Aparelho"/>
+</qualifiedTypeNameHistroy>

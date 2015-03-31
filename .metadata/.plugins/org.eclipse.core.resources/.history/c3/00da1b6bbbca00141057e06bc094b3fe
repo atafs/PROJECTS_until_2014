@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="pt.iscte.poo.instalacao.Relogio" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/Relogio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="157" x="26" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="2" language="java" name="pt.iscte.poo.instalacao.aparelhos" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/aparelhos" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="212" x="233" y="-35"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="pt.iscte.poo.main" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/main" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="121" x="717" y="-35"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="4" language="java" name="pt.iscte.poo.instalacao.aparelhos.Lampada" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/aparelhos/Lampada.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="155" x="485" y="531"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="5" language="java" name="pt.iscte.poo.instalacao.teste" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/teste" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="184" x="878" y="-35"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="6" language="java" name="pt.iscte.poo.instalacao.Instalacao" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/Instalacao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="192" x="485" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="pt.iscte.poo.instalacao.interfaces.Ligavel" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/interfaces/Ligavel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="149" x="1102" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="pt.iscte.poo.instalacao.aparelhos.Aparelho" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/aparelhos/Aparelho.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="279" width="181" x="485" y="212"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="pt.iscte.poo.main.MainIntecalar" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/main/MainIntecalar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="113" x="1291" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="10" language="java" name="pt.iscte.poo.instalacao.interfaces" project="TF POO 2015 Pack V1.4" 
+    file="/TF POO 2015 Pack V1.4/src/pt/iscte/poo/instalacao/interfaces" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="213" x="1444" y="-35"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <association id="11">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="12" name="instance"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <association id="15">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="16" name="aparelho"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

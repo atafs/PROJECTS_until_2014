@@ -1,0 +1,44 @@
+package pt.iscte.poo.instalacao.aparelhos;
+
+public class MicroOndas  extends Aparelho{
+	
+	//ATTRIBUTES
+	private String name;
+	private int power;
+	
+	//CONSTRUCTOR
+	public MicroOndas(String name, int id) {
+		super(nome, id);
+	}
+	
+	//GETTERS AND SETTERS
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPower() {
+		return power;
+	}
+	public void setPower(int power) {
+		this.power = power;
+	}
+
+	/** */
+	public void aumenta(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/** */
+	public void liga() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	//TOSTRING
+	
+	
+
+}
