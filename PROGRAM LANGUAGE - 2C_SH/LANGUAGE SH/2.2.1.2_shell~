@@ -1,8 +1,0 @@
-# O símbolo $ representa uma varável. Como faço a gestão das variável: consulta, eliminação ??? Ao fechar a shell as variáveis são apagadas automaticamente ???
-
-#porque é que só está a imprimir o nemo érico ??? em vez de Américo ???
-
-echo $USER
-echo Eu sou, portando, o utilizador $USER
-echo Eu sou o utilizador $USER e estou a executar a shell $SHELL
-
